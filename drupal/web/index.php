@@ -10,11 +10,7 @@
                 flex-direction: column;
                 justify-content: center;
             }
-            h1 {
-                color:white;
-                text-align:center;
-            }
         </style>
-        <h1>Plank Production.</h1>
+        <img src="/comingsoon.png"/>
     </body>
 </html>
