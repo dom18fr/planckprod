@@ -2,7 +2,19 @@
     <head>
         <title>Plank Production</title>
     </head>
-    <body style="background:black;display: flex;flex-direction: column;justify-content: center;">
-        <h1 style="color:white;text-align:center;">Plank Production</h1>
+    <body>
+        <style>
+            body {
+                background:black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            h1 {
+                color:white;
+                text-align:center;
+            }
+        </style>
+        <h1>Plank Production.</h1>
     </body>
 </html>
