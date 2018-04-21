@@ -13,7 +13,7 @@ pipeline {
         -o StrictHostKeyChecking=no \
         " \
         cd /home/plank/plankprod.com \
-        git clone git@github.com:dom18fr/plankprod.git deploy \
+        && git clone git@github.com:dom18fr/plankprod.git deploy \
         "'
       }
     }
