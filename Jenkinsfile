@@ -13,7 +13,7 @@ pipeline {
         -o StrictHostKeyChecking=no \
         " \
         cd /home/plank/ \
-        && touch ok.test
+        && touch ok.test \
         "'
       }
     }
