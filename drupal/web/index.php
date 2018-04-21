@@ -10,7 +10,19 @@
                 flex-direction: column;
                 justify-content: center;
             }
+            #main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 1000px;
+            }
+            .pic {
+                max-width: 100%;
+                height: auto;
+            }
         </style>
-        <img src="/comingsoon.png"/>
+        <div id="mai">
+            <img class="pic" src="/comingsoon.png"/>
+        </div>
     </body>
 </html>
