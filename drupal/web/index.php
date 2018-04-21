@@ -7,7 +7,6 @@
             body {
                 background:black;
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
             }
             #main {
