@@ -1,27 +1,22 @@
-<html>
-    <head>
-        <title>Planck Prod</title>
-    </head>
-    <body>
-        <style>
-            body {
-                background:black;
-                display: flex;
-                justify-content: center;
-            }
-            #main {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 1000px;
-            }
-            .pic {
-                max-width: 100%;
-                height: auto;
-            }
-        </style>
-        <div id="mai">
-            <img class="pic" src="/comingsoon.png"/>
-        </div>
-    </body>
-</html>
+<?php
+
+/**
+ * @file
+ * The PHP page that serves all page requests on a Drupal installation.
+ *
+ * All Drupal code is released under the GNU General Public License.
+ * See COPYRIGHT.txt and LICENSE.txt files in the "core" directory.
+ */
+
+use Drupal\Core\DrupalKernel;
+use Symfony\Component\HttpFoundation\Request;
+
+$autoloader = require_once 'autoload.php';
+
+$kernel = new DrupalKernel('prod', $autoloader);
+
+$request = Request::createFromGlobals();
+$response = $kernel->handle($request);
+$response->send();
+
+$kernel->terminate($request, $response);
