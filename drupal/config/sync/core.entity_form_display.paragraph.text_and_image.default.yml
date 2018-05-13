@@ -1,0 +1,51 @@
+uuid: c4a42aad-d3b8-4bcd-a971-b7da71a0844e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_and_image.field_image
+    - field.field.paragraph.text_and_image.field_image_side
+    - field.field.paragraph.text_and_image.field_text
+    - paragraphs.paragraphs_type.text_and_image
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - text
+id: paragraph.text_and_image.default
+targetEntityType: paragraph
+bundle: text_and_image
+mode: default
+content:
+  field_image:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: image
+      label_plural: images
+      allow_new: true
+      allow_existing: true
+      match_operator: STARTS_WITH
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: media_entity_browser
+    type: inline_entity_form_complex
+    region: content
+  field_image_side:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

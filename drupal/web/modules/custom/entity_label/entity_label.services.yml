@@ -1,0 +1,3 @@
+services:
+  entity_label.entitylabel:
+    class: Drupal\entity_label\Service\EntityLabel

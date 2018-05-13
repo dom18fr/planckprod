@@ -1,0 +1,18 @@
+type: theme
+base theme: cleverdrop
+
+name: "Planck theme"
+description: Custom theme for planck.com
+package: Planck
+
+version: 8.x-1.0
+core: 8.x
+
+#libraries:
+#  - capcom/common-styles
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer
+

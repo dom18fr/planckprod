@@ -1,0 +1,7 @@
+name: entity_label
+description: 'Provide an extrafield to get entity label in view modes'
+type: module
+core: 8.x
+dependencies:
+  - field
+version: 8.x-1.0

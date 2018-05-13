@@ -1,0 +1,20 @@
+uuid: cee20c25-2005-417b-9d0c-c5e3be4e008c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - filter.format.markdown
+  module:
+    - simplemde
+format: markdown
+editor: simplemde
+settings:
+  spell_checker: 0
+  prompt_urls: 0
+  show_icons:
+    - heading
+    - unordered-list
+    - ordered-list
+    - link
+    - guide
+image_upload: {  }

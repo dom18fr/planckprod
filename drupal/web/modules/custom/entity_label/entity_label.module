@@ -1,0 +1,78 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+
+function entity_label_theme() {
+
+  $themes = [];
+
+  $themes['entity_linked_label'] = [
+    'render element' => 'element',
+    'template' => 'entity-linked-label'
+  ];
+
+  $themes['entity_label'] = [
+    'render element' => 'element',
+    'template' => 'entity-label'
+  ];
+
+  return $themes;
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function entity_label_entity_extra_field_info() {
+
+  return Drupal::service('entity_label.entitylabel')->getXfieldDefinitions();
+}
+
+/**
+ * Implements hook_entity_view().
+ *
+ * @param array $build
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ * @param \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display
+ * @param $view_mode
+ */
+function entity_label_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+
+  /** @var Drupal\entity_label\Service\EntityLabel $service */
+  $service = Drupal::service('entity_label.entitylabel');
+  $service->viewLabels($build, $entity, $display, $view_mode);
+}
+
+function entity_label_preprocess_entity_label(&$variables) {
+
+  /** @var Drupal\entity_label\Service\EntityLabel $service */
+  $service = Drupal::service('entity_label.entitylabel');
+  $service->preprocessVariables($variables, 'entity_label');
+}
+
+function entity_label_preprocess_entity_linked_label(&$variables) {
+
+  /** @var Drupal\entity_label\Service\EntityLabel $service */
+  $service = Drupal::service('entity_label.entitylabel');
+  $service->preprocessVariables($variables, 'entity_linked_label');
+}
+
+function entity_label_theme_suggestions_entity_label_alter(
+  array &$suggestions,
+  array $variables
+) {
+
+  /** @var Drupal\entity_label\Service\EntityLabel $service */
+  $service = Drupal::service('entity_label.entitylabel');
+  $service->alterSuggestions($suggestions, $variables, 'entity_label');
+}
+
+function entity_label_theme_suggestions_entity_linked_label_alter(
+  array &$suggestions,
+  array $variables
+) {
+
+  /** @var Drupal\entity_label\Service\EntityLabel $service */
+  $service = Drupal::service('entity_label.entitylabel');
+  $service->alterSuggestions($suggestions, $variables, 'entity_linked_label');
+}

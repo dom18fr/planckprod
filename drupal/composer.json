@@ -17,6 +17,21 @@
         {
             "type": "git",
             "url": "https://github.com/dom18fr/cleverdrop"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "sparksuite/simplemde-markdown-editor",
+                "version": "1.11.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/sparksuite/simplemde-markdown-editor/archive/1.11.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
         }
     ],
     "require": {
@@ -27,6 +42,15 @@
         "drupal/cleverdrop": "dev-master",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.3",
+        "drupal/ctools": "^3.0",
+        "drupal/entity_browser": "^1.4",
+        "drupal/inline_entity_form": "^1.0@beta",
+        "drupal/markdown": "^1.2",
+        "drupal/media_entity": "^1.7",
+        "drupal/media_entity_image": "^1.2",
+        "drupal/paragraphs": "^1.2",
+        "drupal/simplemde": "^1.0@alpha",
+        "drupal/video_embed_field": "^2.0",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",

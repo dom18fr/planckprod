@@ -1,0 +1,37 @@
+uuid: b77f2867-cf6f-4d35-99f7-cd2231c38236
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - views
+name: media_entity_browser
+label: media_entity_browser
+display: modal
+display_configuration:
+  width: '1024'
+  height: '800'
+  link_text: 'Select existing media'
+  auto_open: true
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: media
+  display: rendered_entity
+  display_settings:
+    view_mode: default
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  6a77bcc7-14f7-436c-803c-a64140a6048f:
+    settings:
+      view: media_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 6a77bcc7-14f7-436c-803c-a64140a6048f
+    weight: 1
+    label: view
+    id: view

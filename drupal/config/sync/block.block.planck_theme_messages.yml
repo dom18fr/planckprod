@@ -1,0 +1,22 @@
+uuid: 4edfb6d6-a0cd-44ee-96e3-66bb9cfa32e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - planck_theme
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: planck_theme_messages
+theme: planck_theme
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

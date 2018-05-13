@@ -1,0 +1,16 @@
+uuid: 257bfbd3-2d20-4c08-b64a-fefb2df4f0ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity_image
+id: image
+label: image
+description: ''
+type: image
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration:
+  source_field: field_image_file
+  gather_exif: false
+field_map: {  }
