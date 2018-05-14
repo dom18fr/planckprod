@@ -1,11 +1,11 @@
-uuid: 9ff08854-cffc-4bcf-9f43-64898063aac8
+uuid: 0c2d2992-1ac7-4a3c-bfff-7e04a13a704d
 langcode: en
 status: true
 dependencies:
   config:
-    - media.type.image
-id: media.image
+    - media.type.video
+id: media.video
 target_entity_type_id: media
-target_bundle: image
+target_bundle: video
 default_langcode: site_default
 language_alterable: false

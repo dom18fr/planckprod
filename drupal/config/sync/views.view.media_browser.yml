@@ -1,10 +1,10 @@
-uuid: b578ea61-0a63-4ce0-a3ce-593a67c5f5e4
+uuid: f855478b-d256-45dd-9cf5-6aec7c13e410
 langcode: en
 status: true
 dependencies:
   module:
     - entity_browser
-    - media_entity
+    - media
     - user
 id: media_browser
 label: media_browser
@@ -24,7 +24,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'view media'
       cache:
         type: tag
         options: {  }
@@ -204,7 +204,22 @@ display:
           expose:
             operator: ''
           group: 1
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: media_field_data
+          field: created
+          order: DESC
+          entity_type: media
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
       header: {  }
       footer: {  }
       empty: {  }

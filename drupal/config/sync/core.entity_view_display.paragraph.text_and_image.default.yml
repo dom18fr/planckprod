@@ -16,13 +16,13 @@ bundle: text_and_image
 mode: default
 content:
   field_image:
-    weight: 1
+    type: entity_reference_entity_view
+    weight: 3
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
     region: content
   field_image_side:
     type: list_default

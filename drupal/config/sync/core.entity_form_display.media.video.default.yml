@@ -1,25 +1,22 @@
-uuid: b1ac2c77-f68b-48f9-bff8-9a251462f09c
+uuid: 2f5793bf-8c9b-48f4-b37c-8ea089e16fa7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.image.field_media_image
-    - image.style.thumbnail
-    - media.type.image
+    - field.field.media.video.field_media_video_embed_field
+    - media.type.video
   module:
-    - image
-id: media.image.default
+    - video_embed_field
+id: media.video.default
 targetEntityType: media
-bundle: image
+bundle: video
 mode: default
 content:
-  field_media_image:
+  field_media_video_embed_field:
     weight: 1
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+    settings: {  }
     third_party_settings: {  }
-    type: image_image
+    type: video_embed_field_textfield
     region: content
   name:
     type: string_textfield

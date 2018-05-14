@@ -20,15 +20,15 @@ content:
     weight: 1
     settings:
       form_mode: default
-      override_labels: true
-      label_singular: image
-      label_plural: images
+      label_singular: ''
+      label_plural: ''
       allow_new: true
       allow_existing: true
-      match_operator: STARTS_WITH
+      match_operator: CONTAINS
+      override_labels: false
     third_party_settings:
       entity_browser_entity_form:
-        entity_browser_id: media_entity_browser
+        entity_browser_id: media_brower
     type: inline_entity_form_complex
     region: content
   field_image_side:

@@ -1,17 +1,17 @@
-uuid: 3fd88018-d4ec-4f65-bdb2-e78911a69a60
+uuid: 8f464c8d-7d27-4c72-bb1b-a2b71405672b
 langcode: en
 status: true
 dependencies:
   config:
-    - media_entity.bundle.image
-id: media.image.status
+    - media.type.video
+id: media.video.status
 field_name: status
 entity_type: media
-bundle: image
-label: 'Publishing status'
-description: 'A boolean indicating whether the media is published.'
+bundle: video
+label: Published
+description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 1

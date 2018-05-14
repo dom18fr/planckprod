@@ -46,8 +46,6 @@
         "drupal/entity_browser": "^1.4",
         "drupal/inline_entity_form": "^1.0@beta",
         "drupal/markdown": "^1.2",
-        "drupal/media_entity": "^1.7",
-        "drupal/media_entity_image": "^1.2",
         "drupal/paragraphs": "^1.2",
         "drupal/simplemde": "^1.0@alpha",
         "drupal/video_embed_field": "^2.0",

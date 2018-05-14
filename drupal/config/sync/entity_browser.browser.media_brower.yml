@@ -1,4 +1,4 @@
-uuid: b77f2867-cf6f-4d35-99f7-cd2231c38236
+uuid: 593008cb-d32c-4b25-88ce-4f1f424bfa95
 langcode: en
 status: true
 dependencies:
@@ -6,14 +6,14 @@ dependencies:
     - views.view.media_browser
   module:
     - views
-name: media_entity_browser
-label: media_entity_browser
+name: media_brower
+label: media_brower
 display: modal
 display_configuration:
   width: '1024'
   height: '800'
-  link_text: 'Select existing media'
-  auto_open: true
+  link_text: 'Select entities'
+  auto_open: false
 selection_display: multi_step_display
 selection_display_configuration:
   entity_type: media
@@ -22,16 +22,18 @@ selection_display_configuration:
     view_mode: default
   select_text: 'Use selected'
   selection_hidden: false
+  view: media
+  view_display: media_page_list
 widget_selector: single
 widget_selector_configuration: {  }
 widgets:
-  6a77bcc7-14f7-436c-803c-a64140a6048f:
+  8a403aab-305e-4f7e-bfdd-39329b7f8881:
     settings:
       view: media_browser
       view_display: entity_browser_1
       submit_text: 'Select entities'
       auto_select: false
-    uuid: 6a77bcc7-14f7-436c-803c-a64140a6048f
+    uuid: 8a403aab-305e-4f7e-bfdd-39329b7f8881
     weight: 1
     label: view
     id: view
