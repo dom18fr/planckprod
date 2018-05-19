@@ -1,0 +1,22 @@
+uuid: 32d7bb94-0303-4650-a8f3-708c588f3b27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.soundcloud.field_soundcloud
+    - paragraphs.paragraphs_type.soundcloud
+id: paragraph.soundcloud.default
+targetEntityType: paragraph
+bundle: soundcloud
+mode: default
+content:
+  field_soundcloud:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

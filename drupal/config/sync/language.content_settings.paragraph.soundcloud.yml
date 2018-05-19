@@ -1,18 +1,18 @@
-uuid: 6bee3b79-91ec-4cde-931d-ce68fba0dce4
+uuid: 380c0cf0-1e36-4559-a0f8-b3516098628a
 langcode: en
 status: true
 dependencies:
   config:
-    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.soundcloud
   module:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: true
+    enabled: false
     bundle_settings:
       untranslatable_fields_hide: '1'
-id: paragraph.text
+id: paragraph.soundcloud
 target_entity_type_id: paragraph
-target_bundle: text
+target_bundle: soundcloud
 default_langcode: site_default
 language_alterable: false

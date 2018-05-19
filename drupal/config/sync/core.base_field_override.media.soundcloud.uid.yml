@@ -1,0 +1,20 @@
+uuid: a52d72d1-efe9-4eca-895c-ae38b8d5fff0
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.soundcloud
+id: media.soundcloud.uid
+field_name: uid
+entity_type: media
+bundle: soundcloud
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

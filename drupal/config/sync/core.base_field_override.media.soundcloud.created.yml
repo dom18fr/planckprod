@@ -1,0 +1,18 @@
+uuid: fdcce243-b116-48eb-ac84-762835a5bd33
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.soundcloud
+id: media.soundcloud.created
+field_name: created
+entity_type: media
+bundle: soundcloud
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

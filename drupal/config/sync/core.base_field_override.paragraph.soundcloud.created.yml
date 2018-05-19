@@ -1,0 +1,18 @@
+uuid: 3943a016-fba3-45b3-8bd8-473664fa94af
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.soundcloud
+id: paragraph.soundcloud.created
+field_name: created
+entity_type: paragraph
+bundle: soundcloud
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

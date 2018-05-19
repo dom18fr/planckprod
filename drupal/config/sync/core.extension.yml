@@ -18,6 +18,7 @@ module:
   locale: 0
   markdown: 0
   media: 0
+  media_entity_soundcloud: 0
   node: 0
   options: 0
   page_cache: 0

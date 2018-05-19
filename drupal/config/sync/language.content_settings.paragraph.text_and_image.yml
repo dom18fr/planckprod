@@ -1,9 +1,9 @@
-uuid: 6bee3b79-91ec-4cde-931d-ce68fba0dce4
+uuid: eae02da3-9d7c-48df-ac1e-9712b642b936
 langcode: en
 status: true
 dependencies:
   config:
-    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_and_image
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '1'
-id: paragraph.text
+id: paragraph.text_and_image
 target_entity_type_id: paragraph
-target_bundle: text
+target_bundle: text_and_image
 default_langcode: site_default
 language_alterable: false

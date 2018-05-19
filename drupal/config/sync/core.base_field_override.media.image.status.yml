@@ -1,13 +1,13 @@
-uuid: 8f464c8d-7d27-4c72-bb1b-a2b71405672b
+uuid: 22ed70fb-a771-43a3-abc7-2d3345c17aa1
 langcode: en
 status: true
 dependencies:
   config:
-    - media.type.video
-id: media.video.status
+    - media.type.image
+id: media.image.status
 field_name: status
 entity_type: media
-bundle: video
+bundle: image
 label: Published
 description: ''
 required: false

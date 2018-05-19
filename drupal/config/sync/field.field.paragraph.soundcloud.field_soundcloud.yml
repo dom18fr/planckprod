@@ -1,0 +1,28 @@
+uuid: 9bcae8d2-5693-475a-a59d-c41ae1fc36a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_soundcloud
+    - media.type.soundcloud
+    - paragraphs.paragraphs_type.soundcloud
+id: paragraph.soundcloud.field_soundcloud
+field_name: field_soundcloud
+entity_type: paragraph
+bundle: soundcloud
+label: soundcloud
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      soundcloud: soundcloud
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

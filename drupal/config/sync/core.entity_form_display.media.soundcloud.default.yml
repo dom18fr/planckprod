@@ -1,0 +1,33 @@
+uuid: 2c41dcb7-efa2-41ec-a94c-4ade993f546b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.soundcloud.field_media_soundcloud
+    - media.type.soundcloud
+id: media.soundcloud.default
+targetEntityType: media
+bundle: soundcloud
+mode: default
+content:
+  field_media_soundcloud:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  status: true
+  uid: true

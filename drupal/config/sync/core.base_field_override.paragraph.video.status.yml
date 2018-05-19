@@ -1,12 +1,12 @@
-uuid: 8f464c8d-7d27-4c72-bb1b-a2b71405672b
+uuid: 29cb0303-c38e-4049-83c1-b370e42e9c23
 langcode: en
 status: true
 dependencies:
   config:
-    - media.type.video
-id: media.video.status
+    - paragraphs.paragraphs_type.video
+id: paragraph.video.status
 field_name: status
-entity_type: media
+entity_type: paragraph
 bundle: video
 label: Published
 description: ''

@@ -1,13 +1,13 @@
-uuid: 8f464c8d-7d27-4c72-bb1b-a2b71405672b
+uuid: 8ca5455b-8e1f-40f8-ac56-23ef99a032ac
 langcode: en
 status: true
 dependencies:
   config:
-    - media.type.video
-id: media.video.status
+    - media.type.soundcloud
+id: media.soundcloud.status
 field_name: status
 entity_type: media
-bundle: video
+bundle: soundcloud
 label: Published
 description: ''
 required: false

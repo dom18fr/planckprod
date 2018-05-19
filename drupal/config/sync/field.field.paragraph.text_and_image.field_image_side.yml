@@ -14,7 +14,7 @@ bundle: text_and_image
 label: image_side
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: left
