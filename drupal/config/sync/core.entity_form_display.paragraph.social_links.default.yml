@@ -1,0 +1,30 @@
+uuid: 492b0e14-7179-4d19-af8c-ef2b8b0d3c89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_links.field_social_links
+    - paragraphs.paragraphs_type.social_links
+  module:
+    - paragraphs
+id: paragraph.social_links.default
+targetEntityType: paragraph
+bundle: social_links
+mode: default
+content:
+  field_social_links:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: 'Social link'
+      title_plural: 'Social links'
+      edit_mode: closed
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: social_link
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

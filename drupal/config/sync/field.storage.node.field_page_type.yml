@@ -17,6 +17,9 @@ settings:
     -
       value: event
       label: event
+    -
+      value: booker
+      label: booker
   allowed_values_function: ''
 module: options
 locked: false

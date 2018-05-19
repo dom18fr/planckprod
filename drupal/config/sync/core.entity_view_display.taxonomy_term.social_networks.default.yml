@@ -1,0 +1,25 @@
+uuid: 103af212-64ed-4bd6-b833-fe6a54915daf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.social_networks.field_logo
+    - taxonomy.vocabulary.social_networks
+id: taxonomy_term.social_networks.default
+targetEntityType: taxonomy_term
+bundle: social_networks
+mode: default
+content:
+  field_logo:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  description: true
+  langcode: true
+  xfield_label: true
+  xfield_linked_label: true

@@ -1,18 +1,18 @@
-uuid: d72f4013-64bd-462f-9452-48bec301c257
+uuid: c23632c0-dc63-4b8d-9f64-631a51c256dc
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_paragraphs
-    - node.type.page
+    - field.storage.paragraph.field_social_links
     - paragraphs.paragraphs_type.social_link
+    - paragraphs.paragraphs_type.social_links
   module:
     - entity_reference_revisions
-id: node.page.field_paragraphs
-field_name: field_paragraphs
-entity_type: node
-bundle: page
-label: paragraphs
+id: paragraph.social_links.field_social_links
+field_name: field_social_links
+entity_type: paragraph
+bundle: social_links
+label: social_links
 description: ''
 required: false
 translatable: false
@@ -21,19 +21,10 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 1
+    negate: 0
     target_bundles:
       social_link: social_link
     target_bundles_drag_drop:
-      video:
-        weight: 4
-        enabled: false
-      text:
-        weight: 5
-        enabled: false
-      text_and_image:
-        weight: 6
-        enabled: false
       download:
         weight: 10
         enabled: false
@@ -51,5 +42,14 @@ settings:
         enabled: false
       soundcloud:
         weight: 15
+        enabled: false
+      text:
+        weight: 16
+        enabled: false
+      text_and_image:
+        weight: 17
+        enabled: false
+      video:
+        weight: 18
         enabled: false
 field_type: entity_reference_revisions

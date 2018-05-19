@@ -1,25 +1,25 @@
-uuid: 50f818f6-5f1f-438d-9223-fffce9968a98
+uuid: d817154c-0e7b-4bde-b32d-d63b22e6b16e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.image_full.field_image
-    - paragraphs.paragraphs_type.image_full
+    - field.field.paragraph.download.field_document
+    - paragraphs.paragraphs_type.download
   module:
     - entity_browser_entity_form
     - inline_entity_form
-id: paragraph.image_full.default
+id: paragraph.download.default
 targetEntityType: paragraph
-bundle: image_full
+bundle: download
 mode: default
 content:
-  field_image:
+  field_document:
     weight: 0
     settings:
       form_mode: default
       override_labels: true
-      label_singular: Image
-      label_plural: Images
+      label_singular: Document
+      label_plural: Documents
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS

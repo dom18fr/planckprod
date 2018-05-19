@@ -1,0 +1,11 @@
+uuid: 0eb04de0-21d9-45c3-871c-76ad6c25c4dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_networks
+id: taxonomy_term.social_networks
+target_entity_type_id: taxonomy_term
+target_bundle: social_networks
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: f33926d7-02a1-4bfd-a96a-20763505f673
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_logo
+    - taxonomy.vocabulary.social_networks
+id: taxonomy_term.social_networks.field_logo
+field_name: field_logo
+entity_type: taxonomy_term
+bundle: social_networks
+label: logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

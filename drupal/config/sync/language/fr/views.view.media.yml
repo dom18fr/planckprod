@@ -1,6 +1,19 @@
+label: Média
 display:
   default:
     display_options:
       fields:
+        uid:
+          label: Auteur
         operations:
           label: Actions
+      filters:
+        langcode:
+          expose:
+            label: Langue
+      title: Média
+  media_page_list:
+    display_title: Média
+    display_options:
+      menu:
+        title: Média
