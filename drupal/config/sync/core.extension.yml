@@ -1,12 +1,14 @@
 module:
   block: 0
   breakpoint: 0
+  conditional_fields: 0
   ctools: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
   entity_browser_entity_form: 0
+  entity_label: 0
   entity_reference_revisions: 0
   field: 0
   field_ui: 0

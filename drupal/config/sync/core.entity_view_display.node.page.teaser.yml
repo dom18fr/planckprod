@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_field_primary_image
+    - field.field.node.page.field_page_type
+    - field.field.node.page.field_paragraphs
     - node.type.page
   module:
     - user
@@ -12,9 +15,23 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_field_primary_image:
+    type: entity_reference_entity_view
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+  xfield_label:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  field_page_type: true
   field_paragraphs: true
   langcode: true
+  links: true
+  xfield_linked_label: true

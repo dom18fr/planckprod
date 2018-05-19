@@ -1,0 +1,25 @@
+uuid: 50f818f6-5f1f-438d-9223-fffce9968a98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_full.field_image
+    - paragraphs.paragraphs_type.image_full
+id: paragraph.image_full.default
+targetEntityType: paragraph
+bundle: image_full
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
