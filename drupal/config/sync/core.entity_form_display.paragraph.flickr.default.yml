@@ -1,0 +1,34 @@
+uuid: 4e0a2049-31c2-43dc-af6f-e6087934c10b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.flickr.field_flickr
+    - paragraphs.paragraphs_type.flickr
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+id: paragraph.flickr.default
+targetEntityType: paragraph
+bundle: flickr
+mode: default
+content:
+  field_flickr:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Flickr resource'
+      label_plural: 'Flickr resources'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: media_brower
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

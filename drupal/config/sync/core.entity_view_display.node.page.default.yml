@@ -3,9 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_field_primary_image
+    - field.field.node.page.field_event_date
     - field.field.node.page.field_page_type
     - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_primary_image
     - node.type.page
   module:
     - entity_reference_revisions
@@ -15,6 +16,16 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_event_date:
+    weight: 2
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    type: timestamp
+    region: content
   field_paragraphs:
     type: entity_reference_revisions_entity_view
     weight: 1
@@ -24,13 +35,21 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
+  field_primary_image:
+    type: entity_reference_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   xfield_label:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_field_primary_image: true
   field_page_type: true
   langcode: true
   links: true

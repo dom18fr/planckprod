@@ -1,0 +1,30 @@
+uuid: 43b9294e-b265-4e85-8e7f-1ecac847a854
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.discography.field_records
+    - paragraphs.paragraphs_type.discography
+  module:
+    - paragraphs
+id: paragraph.discography.default
+targetEntityType: paragraph
+bundle: discography
+mode: default
+content:
+  field_records:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: record
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

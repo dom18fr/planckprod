@@ -1,0 +1,9 @@
+uuid: ea4f9f4e-fc65-4ac1-b488-28675a8c073e
+langcode: en
+status: true
+dependencies: {  }
+id: discography
+label: discography
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

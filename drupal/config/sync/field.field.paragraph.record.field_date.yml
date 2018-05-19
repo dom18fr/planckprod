@@ -1,0 +1,21 @@
+uuid: edcd506d-f170-4765-a293-b99a5f909974
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date
+    - paragraphs.paragraphs_type.record
+id: paragraph.record.field_date
+field_name: field_date
+entity_type: paragraph
+bundle: record
+label: date
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1526741703
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

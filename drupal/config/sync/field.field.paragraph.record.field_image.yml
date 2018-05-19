@@ -1,19 +1,19 @@
-uuid: 3537a6cc-3fd8-4efc-9e12-728c2814788e
+uuid: cdfc2fa8-df6a-4afa-a3c3-33d6372c4874
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_field_primary_image
+    - field.storage.paragraph.field_image
     - media.type.image
-    - node.type.page
-id: node.page.field_field_primary_image
-field_name: field_field_primary_image
-entity_type: node
-bundle: page
-label: field_primary_image
+    - paragraphs.paragraphs_type.record
+id: paragraph.record.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: record
+label: image
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

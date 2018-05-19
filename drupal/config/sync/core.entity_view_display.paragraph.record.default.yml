@@ -1,0 +1,42 @@
+uuid: cbdf21cd-1fe0-48eb-84b7-9a790ceba2e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.record.field_date
+    - field.field.paragraph.record.field_image
+    - field.field.paragraph.record.field_title
+    - paragraphs.paragraphs_type.record
+id: paragraph.record.default
+targetEntityType: paragraph
+bundle: record
+mode: default
+content:
+  field_date:
+    weight: 2
+    label: hidden
+    settings:
+      date_format: short
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    type: timestamp
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

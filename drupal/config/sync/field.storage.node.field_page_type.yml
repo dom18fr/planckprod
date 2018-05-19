@@ -20,6 +20,9 @@ settings:
     -
       value: booker
       label: booker
+    -
+      value: partner
+      label: partner
   allowed_values_function: ''
 module: options
 locked: false

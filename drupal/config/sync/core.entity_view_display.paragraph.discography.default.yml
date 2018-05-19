@@ -1,0 +1,24 @@
+uuid: d764801d-a418-4f0f-8b74-03fb41a04223
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.discography.field_records
+    - paragraphs.paragraphs_type.discography
+  module:
+    - entity_reference_revisions
+id: paragraph.discography.default
+targetEntityType: paragraph
+bundle: discography
+mode: default
+content:
+  field_records:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

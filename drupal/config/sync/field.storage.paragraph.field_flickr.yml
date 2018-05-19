@@ -1,13 +1,13 @@
-uuid: 90e5bef6-4ea7-44d7-8283-84f405e60ce2
+uuid: 0dbc5f35-aa88-4f38-9301-2300544d60a8
 langcode: en
 status: true
 dependencies:
   module:
     - media
-    - node
-id: node.field_field_primary_image
-field_name: field_field_primary_image
-entity_type: node
+    - paragraphs
+id: paragraph.field_flickr
+field_name: field_flickr
+entity_type: paragraph
 type: entity_reference
 settings:
   target_type: media

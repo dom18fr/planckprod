@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_paragraphs
     - node.type.page
+    - paragraphs.paragraphs_type.record
     - paragraphs.paragraphs_type.social_link
   module:
     - entity_reference_revisions
@@ -24,6 +25,7 @@ settings:
     negate: 1
     target_bundles:
       social_link: social_link
+      record: record
     target_bundles_drag_drop:
       video:
         weight: 4
@@ -43,13 +45,22 @@ settings:
       quote:
         weight: 12
         enabled: false
+      discography:
+        weight: 13
+        enabled: false
       social_link:
         enabled: true
         weight: 13
       social_links:
         weight: 14
         enabled: false
+      flickr:
+        weight: 15
+        enabled: false
       soundcloud:
         weight: 15
         enabled: false
+      record:
+        enabled: true
+        weight: 18
 field_type: entity_reference_revisions

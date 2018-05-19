@@ -1,0 +1,50 @@
+uuid: a242200e-6a7e-458a-9b00-0dc87706e90e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.record.field_date
+    - field.field.paragraph.record.field_image
+    - field.field.paragraph.record.field_title
+    - paragraphs.paragraphs_type.record
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+id: paragraph.record.default
+targetEntityType: paragraph
+bundle: record
+mode: default
+content:
+  field_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Image
+      label_plural: Images
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: media_brower
+    type: inline_entity_form_complex
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

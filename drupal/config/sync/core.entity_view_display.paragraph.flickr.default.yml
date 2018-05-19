@@ -1,0 +1,22 @@
+uuid: 87f50a9f-4ee6-45f8-b1a2-b22421d3ec9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.flickr.field_flickr
+    - paragraphs.paragraphs_type.flickr
+id: paragraph.flickr.default
+targetEntityType: paragraph
+bundle: flickr
+mode: default
+content:
+  field_flickr:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

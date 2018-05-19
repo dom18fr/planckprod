@@ -1,0 +1,9 @@
+uuid: 9a402887-dc05-460d-b03c-0432b6d9bf4b
+langcode: en
+status: true
+dependencies: {  }
+id: flickr
+label: flickr
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

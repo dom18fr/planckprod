@@ -7,13 +7,11 @@ dependencies:
 _core:
   default_config_hash: RQ9rEACCr5ZVON1JuN22jd6Dou7JKaVeJuxPjrRB9Mc
 id: flickr
-label: Flickr
-description: 'Flickr Media Type'
+label: flickr
+description: ''
 source: flickr
 queue_thumbnail_downloads: false
 new_revision: false
 source_configuration:
   source_field: field_media_flickr
-field_map:
-  shortcode: name
-  username: name
+field_map: {  }

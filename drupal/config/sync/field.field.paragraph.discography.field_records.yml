@@ -1,0 +1,64 @@
+uuid: 92fcf6e9-ff5b-43f8-939e-2b7b590f1b36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_records
+    - paragraphs.paragraphs_type.discography
+    - paragraphs.paragraphs_type.record
+  module:
+    - entity_reference_revisions
+id: paragraph.discography.field_records
+field_name: field_records
+entity_type: paragraph
+bundle: discography
+label: records
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      record: record
+    target_bundles_drag_drop:
+      discography:
+        weight: 12
+        enabled: false
+      download:
+        weight: 13
+        enabled: false
+      flickr:
+        weight: 14
+        enabled: false
+      image_full:
+        weight: 15
+        enabled: false
+      quote:
+        weight: 16
+        enabled: false
+      social_link:
+        weight: 17
+        enabled: false
+      record:
+        enabled: true
+        weight: 18
+      social_links:
+        weight: 18
+        enabled: false
+      soundcloud:
+        weight: 19
+        enabled: false
+      text:
+        weight: 20
+        enabled: false
+      text_and_image:
+        weight: 21
+        enabled: false
+      video:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

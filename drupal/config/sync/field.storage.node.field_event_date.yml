@@ -1,0 +1,18 @@
+uuid: fa5a61e5-d740-4a89-8e6c-21bc345f259e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_event_date
+field_name: field_event_date
+entity_type: node
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: 0b14478c-c11d-489e-b3d7-4c0b5d5a94ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.flickr
+id: media.flickr
+target_entity_type_id: media
+target_bundle: flickr
+default_langcode: site_default
+language_alterable: false
