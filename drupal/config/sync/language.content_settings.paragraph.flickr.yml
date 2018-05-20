@@ -1,0 +1,18 @@
+uuid: 3b517987-48f1-4f78-a903-224eda9533a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.flickr
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.flickr
+target_entity_type_id: paragraph
+target_bundle: flickr
+default_langcode: site_default
+language_alterable: false

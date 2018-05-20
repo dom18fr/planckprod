@@ -2,9 +2,14 @@ label: Média
 display:
   default:
     display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
       fields:
         uid:
           label: Auteur
+        status:
+          label: Etat
         operations:
           label: Actions
       filters:

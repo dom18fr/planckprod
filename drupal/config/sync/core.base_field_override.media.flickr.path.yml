@@ -1,0 +1,20 @@
+uuid: 2e3de15e-39a2-44c3-93d5-d71198d1fd1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.flickr
+  module:
+    - path
+id: media.flickr.path
+field_name: path
+entity_type: media
+bundle: flickr
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

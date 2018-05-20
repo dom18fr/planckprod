@@ -1,0 +1,9 @@
+uuid: 7e6a5d27-54d0-4097-a733-d25046045e5d
+langcode: en
+status: true
+dependencies: {  }
+id: agenda
+label: agenda
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

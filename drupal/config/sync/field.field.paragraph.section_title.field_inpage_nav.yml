@@ -1,0 +1,23 @@
+uuid: 76096ec2-550e-471a-b6fb-65941fa9566d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_inpage_nav
+    - paragraphs.paragraphs_type.section_title
+id: paragraph.section_title.field_inpage_nav
+field_name: field_inpage_nav
+entity_type: paragraph
+bundle: section_title
+label: inpage_nav
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

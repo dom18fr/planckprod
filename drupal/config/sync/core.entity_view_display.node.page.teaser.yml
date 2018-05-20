@@ -5,8 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.field_event_date
+    - field.field.node.page.field_event_link
     - field.field.node.page.field_page_type
     - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_primary_image
+    - field.field.node.page.field_related_groups
     - node.type.page
   module:
     - user
@@ -16,14 +19,17 @@ bundle: page
 mode: teaser
 content:
   xfield_label:
-    weight: 1
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_event_date: true
+  field_event_link: true
   field_page_type: true
   field_paragraphs: true
+  field_primary_image: true
+  field_related_groups: true
   langcode: true
   links: true
   xfield_linked_label: true

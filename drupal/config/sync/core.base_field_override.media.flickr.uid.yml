@@ -1,0 +1,20 @@
+uuid: c300e89d-f864-46a5-86b6-6f1176d0d4d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.flickr
+id: media.flickr.uid
+field_name: uid
+entity_type: media
+bundle: flickr
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

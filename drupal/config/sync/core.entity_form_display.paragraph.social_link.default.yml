@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.social_link.field_link
-    - field.field.paragraph.social_link.field_social_network
+    - field.field.paragraph.social_link.field_logo
     - paragraphs.paragraphs_type.social_link
   module:
     - link
@@ -21,11 +21,13 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_social_network:
-    weight: 0
-    settings: {  }
+  field_logo:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: string_textfield
     region: content
 hidden:
   created: true

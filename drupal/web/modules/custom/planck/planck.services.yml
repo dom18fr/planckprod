@@ -1,0 +1,3 @@
+services:
+  planck.entity_view_mode_handler:
+    class: Drupal\planck\ViewModeHandler

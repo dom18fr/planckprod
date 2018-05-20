@@ -1,0 +1,19 @@
+uuid: 931672d1-2f6f-4d84-ad35-d129e2fd7aa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_logo
+    - paragraphs.paragraphs_type.social_link
+id: paragraph.social_link.field_logo
+field_name: field_logo
+entity_type: paragraph
+bundle: social_link
+label: logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

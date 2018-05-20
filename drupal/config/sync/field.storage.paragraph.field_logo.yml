@@ -1,12 +1,12 @@
-uuid: d67d9640-aa29-4007-a1db-fadc30639251
+uuid: c3df6e6a-4030-404e-9304-d3e36e40f68b
 langcode: en
 status: true
 dependencies:
   module:
-    - taxonomy
-id: taxonomy_term.field_logo
+    - paragraphs
+id: paragraph.field_logo
 field_name: field_logo
-entity_type: taxonomy_term
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

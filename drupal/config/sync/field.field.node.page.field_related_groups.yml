@@ -1,0 +1,25 @@
+uuid: 233460a0-0b3a-44f6-bd7e-981ad2a946e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_groups
+    - node.type.page
+id: node.page.field_related_groups
+field_name: field_related_groups
+entity_type: node
+bundle: page
+label: related_groups
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: groups
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

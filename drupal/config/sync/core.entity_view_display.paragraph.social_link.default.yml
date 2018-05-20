@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.social_link.field_link
-    - field.field.paragraph.social_link.field_social_network
+    - field.field.paragraph.social_link.field_logo
     - paragraphs.paragraphs_type.social_link
   module:
     - link
@@ -25,13 +25,12 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_social_network:
+  field_logo:
     weight: 2
-    label: hidden
+    label: above
     settings:
-      link: false
-      view_mode: default
+      link_to_entity: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    type: string
     region: content
 hidden: {  }

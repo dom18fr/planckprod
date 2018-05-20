@@ -1,12 +1,25 @@
 display:
   default:
     display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
       fields:
         filename:
           label: Nom
         filemime:
           label: 'Type MIME'
+        status:
+          label: Etat
       filters:
         filemime:
           expose:
             label: 'Type MIME'
+        status:
+          expose:
+            label: Etat
+  page_2:
+    display_options:
+      fields:
+        type:
+          label: 'Type d''entité'

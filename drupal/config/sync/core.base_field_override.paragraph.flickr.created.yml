@@ -1,0 +1,18 @@
+uuid: 5883b558-7f4b-492e-be5b-051279c70a40
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.flickr
+id: paragraph.flickr.created
+field_name: created
+entity_type: paragraph
+bundle: flickr
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

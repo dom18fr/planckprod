@@ -1,6 +1,9 @@
 display:
   default:
     display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
       fields:
         title:
           label: Titre
@@ -8,6 +11,8 @@ display:
           label: 'Type de contenu'
         name:
           label: Auteur
+        status:
+          label: Etat
         operations:
           label: Actions
       filters:
@@ -17,6 +22,9 @@ display:
         type:
           expose:
             label: 'Type de contenu'
+        status:
+          expose:
+            label: Etat
         langcode:
           expose:
             label: Langue

@@ -4,14 +4,37 @@ status: true
 dependencies:
   config:
     - field.field.node.page.field_event_date
+    - field.field.node.page.field_event_link
     - field.field.node.page.field_page_type
     - field.field.node.page.field_paragraphs
     - field.field.node.page.field_primary_image
+    - field.field.node.page.field_related_groups
     - node.type.page
   module:
     - conditional_fields
+    - entity_browser_entity_form
+    - field_group
+    - inline_entity_form
+    - link
     - paragraphs
     - path
+third_party_settings:
+  field_group:
+    group_type_specific_fields:
+      children:
+        - field_primary_image
+        - field_event_date
+        - field_related_groups
+        - field_event_link
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: type_specific_fields
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -19,12 +42,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_event_date:
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings:
       conditional_fields:
@@ -51,6 +74,36 @@ content:
           bundle: page
     type: datetime_timestamp
     region: content
+  field_event_link:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        ec382032-bc0d-4494-b8bf-56e0428ea9ac:
+          dependee: field_page_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: event
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: page
+    type: link_default
+    region: content
   field_page_type:
     weight: 2
     settings: {  }
@@ -59,7 +112,7 @@ content:
     region: content
   field_paragraphs:
     type: entity_reference_paragraphs
-    weight: 5
+    weight: 7
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -70,12 +123,18 @@ content:
     third_party_settings: {  }
     region: content
   field_primary_image:
-    weight: 3
+    weight: 4
     settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Image
+      label_plural: Images
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
     third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: media_brower
       conditional_fields:
         5602c17a-4d77-43b0-9cda-24f2b6e89d2a:
           dependee: field_page_type
@@ -96,18 +155,49 @@ content:
             selector: ''
           entity_type: node
           bundle: page
+    type: inline_entity_form_complex
+    region: content
+  field_related_groups:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        c70341d8-2898-4381-9e8d-66bab9e96a49:
+          dependee: field_page_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: event
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: page
     type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select
-    weight: 1
+    weight: 0
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -115,25 +205,25 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 11
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 6
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60

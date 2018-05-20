@@ -1,0 +1,20 @@
+uuid: bda2f781-9faf-4637-ba43-72eb576fb698
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.social_link
+id: paragraph.social_link.uid
+field_name: uid
+entity_type: paragraph
+bundle: social_link
+label: 'Authored by'
+description: 'The user ID of the paragraphs author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\paragraphs\Entity\Paragraph::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

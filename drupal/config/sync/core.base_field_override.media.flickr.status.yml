@@ -1,0 +1,22 @@
+uuid: 35458bfb-b995-4f49-b8f9-6716ebd3a3ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.flickr
+id: media.flickr.status
+field_name: status
+entity_type: media
+bundle: flickr
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

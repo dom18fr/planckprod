@@ -1,0 +1,22 @@
+uuid: 3a9fa004-4334-4eb9-be1c-f085d83289d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.flickr
+id: paragraph.flickr.status
+field_name: status
+entity_type: paragraph
+bundle: flickr
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

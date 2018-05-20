@@ -1,0 +1,20 @@
+uuid: 72b60cae-ec20-45de-b3f4-cab4d1f81d75
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.flickr
+id: media.flickr.name
+field_name: name
+entity_type: media
+bundle: flickr
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+uuid: fd293a6e-c085-4996-8261-307f546f9e7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.agenda
+id: paragraph.agenda.default
+targetEntityType: paragraph
+bundle: agenda
+mode: default
+content:
+  extra_field_agenda_view:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

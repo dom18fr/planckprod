@@ -1,0 +1,18 @@
+uuid: 55dd57b2-c901-4ab7-834d-d8b8e2722ccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.flickr
+id: media.flickr.changed
+field_name: changed
+entity_type: media
+bundle: flickr
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

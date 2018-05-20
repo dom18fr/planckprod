@@ -1,16 +1,14 @@
-uuid: f7ee073f-d381-4f84-baf0-70d04fc0f74a
+uuid: 1d6f00ba-2aed-4343-9466-c95167944693
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-    - taxonomy
-id: paragraph.field_social_network
-field_name: field_social_network
+id: paragraph.field_inpage_nav
+field_name: field_inpage_nav
 entity_type: paragraph
-type: entity_reference
-settings:
-  target_type: taxonomy_term
+type: boolean
+settings: {  }
 module: core
 locked: false
 cardinality: 1

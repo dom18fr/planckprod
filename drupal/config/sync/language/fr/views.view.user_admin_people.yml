@@ -1,8 +1,19 @@
 display:
   default:
     display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
       fields:
+        name:
+          label: 'Nom d''utilisateur'
+        status:
+          label: Etat
         roles_target_id:
           label: Rôles
         operations:
           label: Actions
+      filters:
+        status:
+          group_info:
+            label: Etat

@@ -1,0 +1,22 @@
+uuid: 7740b8d9-49f6-4ef1-b53c-1b8507f4d1a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.discography
+id: paragraph.discography.status
+field_name: status
+entity_type: paragraph
+bundle: discography
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

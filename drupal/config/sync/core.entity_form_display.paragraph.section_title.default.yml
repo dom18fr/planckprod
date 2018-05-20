@@ -1,0 +1,32 @@
+uuid: 55dfcfce-08b3-4e1c-ae10-d0c75d952365
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_title.field_inpage_nav
+    - field.field.paragraph.section_title.field_title
+    - paragraphs.paragraphs_type.section_title
+id: paragraph.section_title.default
+targetEntityType: paragraph
+bundle: section_title
+mode: default
+content:
+  field_inpage_nav:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
