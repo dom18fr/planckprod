@@ -24,6 +24,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  extra_field_inpage_navigation: true
   field_event_date: true
   field_event_link: true
   field_page_type: true

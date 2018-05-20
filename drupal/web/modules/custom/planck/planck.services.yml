@@ -1,3 +1,5 @@
 services:
-  planck.entity_view_mode_handler:
+  planck.view_mode_handler:
     class: Drupal\planck\ViewModeHandler
+  planck.theme_manager:
+    class: Drupal\planck\ThemeManager

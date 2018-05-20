@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.section_title.field_inpage_nav
+    - field.field.paragraph.section_title.field_logo
     - field.field.paragraph.section_title.field_title
     - paragraphs.paragraphs_type.section_title
 id: paragraph.section_title.default
@@ -12,11 +13,19 @@ bundle: section_title
 mode: default
 content:
   field_inpage_nav:
+    type: boolean_checkbox
     weight: 1
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
+  field_logo:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_title:
     weight: 0
@@ -29,4 +38,5 @@ content:
 hidden:
   created: true
   status: true
+  translation: true
   uid: true

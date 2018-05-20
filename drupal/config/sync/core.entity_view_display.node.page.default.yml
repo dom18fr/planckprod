@@ -18,9 +18,14 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  extra_field_inpage_navigation:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_paragraphs:
     type: entity_reference_revisions_entity_view
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       view_mode: default
