@@ -1,0 +1,24 @@
+uuid: a5e09171-cbbb-444e-b0bb-5128cf734719
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.planck-primary-menu
+  module:
+    - system
+  theme:
+    - planck_theme
+id: planck_primary_menu
+theme: planck_theme
+region: header
+weight: -1
+provider: null
+plugin: 'system_menu_block:planck-primary-menu'
+settings:
+  id: 'system_menu_block:planck-primary-menu'
+  label: planck_primary_menu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

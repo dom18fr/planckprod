@@ -1,0 +1,24 @@
+uuid: bc14ef61-9238-4d1c-ba2c-6f9f40490271
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.planck-footer-menu
+  module:
+    - system
+  theme:
+    - planck_theme
+id: planck_footer_menu
+theme: planck_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:planck-footer-menu'
+settings:
+  id: 'system_menu_block:planck-footer-menu'
+  label: planck_footer_menu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

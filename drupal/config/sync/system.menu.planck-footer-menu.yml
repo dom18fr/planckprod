@@ -1,0 +1,8 @@
+uuid: bdfb1108-ba27-4f4f-b077-572acd695a8d
+langcode: und
+status: true
+dependencies: {  }
+id: planck-footer-menu
+label: planck_footer_menu
+description: ''
+locked: false

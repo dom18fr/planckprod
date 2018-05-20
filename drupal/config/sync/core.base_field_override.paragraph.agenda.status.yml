@@ -1,0 +1,22 @@
+uuid: 51f84a07-ea66-4209-ad34-23e8b34a7c90
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.agenda
+id: paragraph.agenda.status
+field_name: status
+entity_type: paragraph
+bundle: agenda
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

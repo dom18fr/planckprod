@@ -9,7 +9,7 @@ _core:
 id: planck_theme_local_tasks
 theme: planck_theme
 region: content
-weight: -2
+weight: -1
 provider: null
 plugin: local_tasks_block
 settings:
