@@ -6,7 +6,7 @@
   },
   "css" : {
     "src-dir"     : "./src/css",
-    "dest-dir"    : "./build/css",
+    "dest-dir"    : "../css",
     "engine"      : "sass",
     "postcss"     : {
       "autoprefixer": {
@@ -26,12 +26,12 @@
   },
   "js" : {
     "src-dir"  : "./src/js",
-    "dest-dir" : "./build/js",
+    "dest-dir" : "../js",
     "engine"   : "webpack"
   },
   "images": {
     "src-dir"  : "./src/assets/img",
-    "dest-dir" : "./build/img"
+    "dest-dir" : "../img"
   },
   "svg": {
     "src-dir"  : "./src/assets/svg/symbols",

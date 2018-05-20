@@ -1,0 +1,26 @@
+common-styles:
+  version: VERSION
+  css:
+    component:
+      css/styles.css: {}
+
+#lazy-loading:
+#  js:
+#    /libraries/lazyload/dist/lazyload.min.js: { minified: true }
+#    js/lazyloading.js: {}
+#  dependencies:
+#    - core/drupal
+#
+#smooth-scroll:
+#  js:
+#    /libraries/smooth-scroll/dist/js/smooth-scroll.min.js: { minified: true }
+#    js/smooth-scroll.js: {}
+#  dependencies:
+#    - core/drupal
+#
+#sticky:
+#  js:
+#    /libraries/sticky-js/dist/sticky.min.js: { minified: true }
+#    js/sticky.js: {}
+#  dependencies:
+#    - core/drupal

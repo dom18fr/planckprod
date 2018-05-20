@@ -8,8 +8,8 @@ package: Planck
 version: 8.x-1.0
 core: 8.x
 
-#libraries:
-#  - capcom/common-styles
+libraries:
+  - planck_theme/common-styles
 
 regions:
   header: Header

@@ -1,0 +1,240 @@
+.ca__md h1, .ca__title1, .ca__md h2, .ca__title2, .ca__md h3, .ca__title3, .ca__md h4,
+.ca__md h5,
+.ca__md h6, .ca__title4 {
+  font-weight: normal;
+  color: #C8A151;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 2rem 0 1rem; }
+
+.ca__md h1, .ca__title1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid #C8A151; }
+
+.ca__md h2, .ca__title2 {
+  font-size: 1.45rem;
+  padding-top: .8rem;
+  border-top: 1px solid #C8A151; }
+
+.ca__md h3, .ca__title3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 1.5em; }
+
+.ca__md h4,
+.ca__md h5,
+.ca__md h6, .ca__title4 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 3em; }
+
+.ca {
+  font: 1em/140% Georgia, serif;
+  padding: 0;
+  margin: 0;
+  background: #FAF8F4; }
+  .ca__pageWrapper {
+    margin: 0 auto;
+    max-width: 59rem;
+    overflow: hidden; }
+  .ca__sidebar {
+    border-radius: .5rem;
+    background: #FFFFFF;
+    float: left;
+    width: 14rem;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    padding: 1rem; }
+    .ca__sidebarMenu {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .ca__sidebarMenu .ca__sidebarMenu {
+        margin-left: 1rem; }
+      .ca__sidebarMenu + .ca__sidebarMenu {
+        border-top: 3px solid #FAF8F4;
+        margin-top: 1rem;
+        padding-top: 1rem; }
+    .ca__sidebarLink {
+      color: inherit;
+      text-decoration: none; }
+      .ca__sidebarLink:hover, .ca__sidebarLink:active, .ca__sidebarLink:focus {
+        color: #C8A151;
+        text-decoration: underline; }
+    .ca__sidebarRef {
+      color: #A6A6A6; }
+  .ca__content {
+    border-radius: .5rem;
+    background: #FFFFFF;
+    margin: 1rem 0 1rem 15rem;
+    padding: 1rem; }
+  .ca__header {
+    background: #FFFFFF;
+    overflow: hidden; }
+    .ca__headerLogo {
+      font: 1.5rem Georgia, serif;
+      background: url("../img/clever-age-logo.png") left center no-repeat;
+      background-size: auto 1.2em;
+      margin: 0;
+      padding: 1rem 0 1rem 6rem;
+      float: left; }
+    .ca__headerNav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float: right; }
+      .ca__headerNavItem {
+        display: inline-block; }
+      .ca__headerNavLink {
+        display: block;
+        font: 1.25rem Georgia, serif;
+        padding: 1.25rem 0 .75rem;
+        margin: 0 0 0 1rem;
+        color: inherit;
+        text-decoration: none;
+        box-sizing: border-box;
+        border-bottom: 0.25rem solid transparent; }
+        .ca__headerNavLink:hover, .ca__headerNavLink-selected {
+          border-bottom-color: #666666; }
+  .ca__md a {
+    color: #990000;
+    text-decoration: none; }
+    .ca__md a:hover {
+      text-decoration: underline; }
+  .ca__md code {
+    font-size: 1.2em; }
+  .ca__md em code {
+    font-style: normal; }
+  .ca__md pre,
+  .ca__md blockquote {
+    border-radius: .5rem;
+    background: #FFFFFF;
+    border: 3px solid #FAF8F4;
+    padding: .5em; }
+  .ca__md blockquote {
+    margin: 1em 0;
+    color: #666666; }
+    .ca__md blockquote p {
+      margin: 0; }
+      .ca__md blockquote p + p {
+        margin-top: 1em; }
+  .ca__titleLink {
+    color: inherit;
+    text-decoration: none; }
+    .ca__titleLink:hover::after {
+      content: '\2714';
+      color: #E6E6E6; }
+  .ca__table {
+    font: 1rem Georgia, serif;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 40rem; }
+    .ca__tableWrapper {
+      overflow: auto; }
+    .ca__table small {
+      font-style: italic; }
+    .ca__table a {
+      color: #990000;
+      text-decoration: none; }
+      .ca__table a:hover {
+        text-decoration: underline; }
+    .ca__table th,
+    .ca__table td {
+      font-weight: normal;
+      text-align: center;
+      border: 1px solid #E6E6E6;
+      padding: 0.5em 1em; }
+    .ca__table thead th {
+      background-color: #3A3737;
+      color: #FFFFFF; }
+    .ca__table thead tr:first-of-type th {
+      text-transform: uppercase; }
+    .ca__table tbody th,
+    .ca__table tbody td:last-of-type {
+      text-align: left; }
+    .ca__table tbody th,
+    .ca__table tbody td {
+      background-color: #FFFFFF;
+      color: #3A3737; }
+  .ca__example {
+    border: 1px solid #E6E6E6; }
+    .ca__exampleHead {
+      display: block;
+      color: #FFFFFF;
+      background: #3A3737;
+      padding: 1rem;
+      margin: 0;
+      border-bottom: 1px solid #E6E6E6; }
+    .ca__exampleTitle code {
+      font-size: 1.2em; }
+    .ca__exampleMarkup {
+      margin: 1rem; }
+      .ca__exampleMarkup::after {
+        content: '';
+        display: table-cell;
+        clear: both; }
+    .ca__exampleCode {
+      border-radius: .5rem;
+      background: #FFFFFF;
+      border: 3px solid #FAF8F4;
+      padding: .5em; }
+  .ca__colors {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .ca__colors > li {
+      overflow: hidden; }
+    .ca__colors__demo {
+      float: left;
+      height: 100px;
+      width: 100px;
+      border: 2px solid #A6A6A6;
+      margin-bottom: .75em; }
+    .ca__colors__info {
+      margin-left: 120px; }
+    .ca__colors__name {
+      margin-top: 0;
+      margin-bottom: .75em;
+      font-weight: bold; }
+    .ca__colors__hex, .ca__colors__rgb, .ca__colors__hsl {
+      font-size: .8em;
+      margin: 0; }
+    .ca__colors__description {
+      color: #666666; }
+  .ca__icons {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .ca__icons > li {
+      overflow: hidden; }
+    .ca__icons__demo {
+      float: left;
+      height: 40px;
+      padding: 30px 0;
+      width: 100px;
+      text-align: center;
+      border: 2px solid #A6A6A6;
+      font-size: 40px;
+      margin-bottom: .25em;
+      font-family: "fontello";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .ca__icons__info {
+      margin-left: 120px; }
+      .ca__icons__info p {
+        margin-top: 0; }
+    .ca__icons__name {
+      font-weight: bold; }
+    .ca__icons__char {
+      margin: 0; }
+    .ca__icons__description {
+      color: #666666; }

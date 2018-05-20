@@ -1,0 +1,74 @@
+.plkHeader {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid $dark-grey;
+  .plkHeadingWpr {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    .plkLogoWpr {
+      width: 150px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .plkPrimaryMenu {
+      margin-bottom: 26px;
+      font-family: 'Bitter';
+      font-size: 1.4em;
+      ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0 1em 0 2em;
+        padding: 0;
+        list-style: none;
+        li {
+          &+li {
+            margin-left: 1em;
+          }
+          a {
+            text-decoration: none;
+            color: $text-color;
+            &:hover {
+              color: $alt-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .plkLangSwitcher {
+    margin-bottom: 26px;
+    align-self: flex-end;
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin: 0 0 0 1em;
+      padding: 0;
+      list-style: none;
+      li {
+        font-size: 0.9em;
+        &+li {
+          margin-left: 0.5em;
+          border-left: 1px solid $light-grey;
+          padding-left: 0.5em;
+        }
+        a {
+          color: $light-grey;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+          &.is-active {
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }
+}

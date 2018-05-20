@@ -1,0 +1,38 @@
+.plkFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid $dark-grey;
+  padding-bottom: 3em;
+  .plkFooterMenu {
+    display: flex;
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin: 0 0 0 1em;
+      padding: 0;
+      list-style: none;
+      li {
+        font-size: 0.9em;
+        &+li {
+          margin-left: 0.5em;
+          border-left: 1px solid $light-grey;
+          padding-left: 0.5em;
+        }
+        a {
+          @extend %plkLink;
+          color: $light-grey;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+          &.is-active {
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }
+}

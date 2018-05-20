@@ -1,0 +1,6 @@
+%plkLink, %plkLink:visited {
+    color: $text-color;
+    &:hover {
+        color: $alt-color;
+    }
+}

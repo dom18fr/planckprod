@@ -1,9 +1,16 @@
-<header>
-    {{ page.header }}
-</header>
-<main>
-    {{ page.content }}
-</main>
-<footer>
-    {{ page.footer }}
-</footer>
+<div class="plkWrapper">
+    <div class="plkContent is-constrained">
+        <header class="plkHeader">
+            <div class="plkHeadingWpr">
+                {{ page.header|without('languageswitcher_2') }}
+            </div>
+            {{ page.header.languageswitcher_2 }}
+        </header>
+        <main class="plkMain">
+            {{ page.content }}
+        </main>
+        <footer class="plkFooter">
+            {{ page.footer }}
+        </footer>
+    </div>
+</div>
