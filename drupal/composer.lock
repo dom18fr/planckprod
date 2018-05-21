@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b6524e238adc26c0e33e9be02a77c54",
+    "content-hash": "c2907455eaa4ca1b0d6878474a747559",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -121,6 +121,20 @@
                 "stack"
             ],
             "time": "2017-12-20T14:37:45+00:00"
+        },
+        {
+            "name": "cferdinandi/smooth-scroll",
+            "version": "12.1.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/cferdinandi/smooth-scroll/archive/v12.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "^1.2.0"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -4114,6 +4128,20 @@
                 "shell"
             ],
             "time": "2018-04-18T12:32:50+00:00"
+        },
+        {
+            "name": "rgalus/sticky-js",
+            "version": "1.2.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/rgalus/sticky-js/archive/1.2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "^1.2.0"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "sebastian/version",

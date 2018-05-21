@@ -1,0 +1,7 @@
+<div class="plkTextAndImg plkComponent">
+    <div class="plkImg plkSide-{{ content.field_image_side|render|striptags|trim }}">
+        {{ content.field_image }}
+    </div>
+    <div class="plkText is-markdown">{{ content.field_text }}</div>
+</div>
+{{ content|without('field_text', 'field_image', 'field_image_side') }}

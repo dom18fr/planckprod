@@ -63,18 +63,29 @@ class InpageNavigation extends ExtraFieldDisplayBase
     /**
      * @param ParagraphInterface $paragraph
      * @return array
-     * @throws MissingDataException
      */
     protected function getItem($paragraph) {
+        $title = null;
+        $icon = null;
+        $anchor = null;
+        try {
+            $titleItem = $paragraph->get('field_title')->first();
+            $title = null !== $titleItem ? $titleItem->getValue()['value'] : null;
+            $anchor = Html::getClass($title);
+        } catch (\Exception $e) {}
+        try {
+            $iconItem = $paragraph->get('field_logo')->first();
+            $icon = null !== $iconItem ? $iconItem->getValue()['value'] : null;
+        } catch (\Exception $e) {}
         $item = [
             'title' => [
-                '#markup' => $paragraph->get('field_title')->first()->getValue()['value']
+                '#markup' => $title,
             ],
             'icon' => [
-                '#markup' => $paragraph->get('field_logo')->first()->getValue()['value']
+                '#markup' => $icon,
             ],
             'anchor' => [
-                '#markup' => Html::getClass($paragraph->get('field_title')->first()->getValue()['value'])
+                '#markup' => $anchor,
             ],
         ];
         

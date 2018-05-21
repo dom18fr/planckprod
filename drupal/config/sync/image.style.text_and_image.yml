@@ -1,0 +1,15 @@
+uuid: c9cc1ac1-3716-4cf3-ab52-aee315497af9
+langcode: fr
+status: true
+dependencies: {  }
+name: text_and_image
+label: text_and_image
+effects:
+  869390ca-18b9-4f8f-923c-a40d713e6528:
+    uuid: 869390ca-18b9-4f8f-923c-a40d713e6528
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: true

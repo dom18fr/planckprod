@@ -1,0 +1,10 @@
+.plkSectionTitle {
+    display: block;
+    position: relative;
+    a {
+        position: relative;
+        top: -60px;
+        left: 0;
+    }
+    @extend %plkTitle2;
+}

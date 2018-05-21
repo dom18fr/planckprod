@@ -1,0 +1,10 @@
+uuid: c9edb412-fa23-410f-881a-fde4839dc75c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.text_and_image
+label: text_and_image
+targetEntityType: media
+cache: true

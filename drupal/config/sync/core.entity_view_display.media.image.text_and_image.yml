@@ -1,22 +1,24 @@
-uuid: 23aae737-e6c4-4efd-9c24-8ceb08b95b4f
+uuid: 05473f16-e17f-4a17-9896-79e48b81f320
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.text_and_image
     - field.field.media.image.field_media_image
+    - image.style.text_and_image
     - media.type.image
   module:
     - image
-id: media.image.default
+id: media.image.text_and_image
 targetEntityType: media
 bundle: image
-mode: default
+mode: text_and_image
 content:
   field_media_image:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: text_and_image
       image_link: ''
     third_party_settings: {  }
     type: image

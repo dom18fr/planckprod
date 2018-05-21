@@ -1,0 +1,29 @@
+.plkTextAndImg {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  &:after {
+    content: "";
+    clear: both;
+  }
+  .plkImg {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 400px;
+    margin-bottom: 1em;
+    &.plkSide-left {
+      float: left;
+      margin-right: 1em;
+    }
+    &.plkSide-right {
+      float: right;
+      margin-left: 1em;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,6 +1,58 @@
-%plkLink, %plkLink:visited {
-    color: $text-color;
-    &:hover {
-        color: $alt-color;
-    }
+.plkTitle1,
+%plkTitle1 {
+  font-family: 'Bitter_bold';
+  color: $alt-color;
+  font-size: 2.6em;
+  margin: 0 0 0.5em 0;
 }
+
+.plkTitle2,
+%plkTitle2 {
+  font-family: 'Bitter';
+  color: $light-grey;
+  font-size: 1.6em;
+  margin: 1em 0 0.5em 0;
+}
+
+.plkTitle3,
+%plkTitle3 {
+  font-family: 'Raleway';
+  color: $light-alt-color;
+  font-size: 1.2em;
+  margin: 1em 0 0.5em 0;
+}
+
+%plkLink,
+%plkLink:visited {
+  color: $text-color;
+  &:hover {
+    color: $alt-color;
+  }
+}
+
+.is-markdown {
+  p {
+    margin: 0 0 1.4em 0;
+    line-height: 1.4em;
+  }
+  strong {
+    font-family: 'Raleway_bold';
+  }
+  em {}
+  ul {
+    margin: 0 0 1.4em 0;
+  }
+  h1 {
+    @extend %plkTitle1;
+  }
+  h2 {
+    @extend %plkTitle2;
+  }
+  h3 {
+    @extend %plkTitle3;
+  }
+  a {
+    @extend %plkLink;
+  }
+}
+

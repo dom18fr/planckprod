@@ -1,10 +1,11 @@
-@charset "UTF-8";
-@import "colors";
-@import "fonts";
-@import "common";
-@import "header";
-@import "footer";
-@import "titles";
+@charset 'UTF-8';
+
+@import 'colors';
+@import 'fonts';
+@import 'common';
+@import 'header';
+@import 'footer';
+@import './components/*';
 
 body {
   font-family: 'Raleway';
@@ -14,7 +15,7 @@ body {
 .plkWrapper {
   color: $text-color;
   background-image: url('/themes/custom/planck_theme/img/background.png');
-  background-position-y: 200px;
+  background-position-y: 300px;
   background-position-x: 0;
   background-repeat: no-repeat;
   background-size: 325px 765px;
@@ -32,7 +33,4 @@ body {
 
 .plkMain {
   min-height: 400px;
-  a {
-    @extend %plkLink;
-  }
 }

@@ -26,10 +26,46 @@
   src: local("Raleway Bold"), local("Raleway-Bold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPANqczVs.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-.plkFooter .plkFooterMenu ul li a, .plkMain a, .plkFooter .plkFooterMenu ul li a:visited, .plkMain a:visited {
+.plkTitle1,
+.is-markdown h1 {
+  font-family: 'Bitter_bold';
+  color: #08708c;
+  font-size: 2.6em;
+  margin: 0 0 0.5em 0; }
+
+.plkTitle2,
+.is-markdown h2,
+.plkSectionTitle {
+  font-family: 'Bitter';
+  color: #7a7a7a;
+  font-size: 1.6em;
+  margin: 1em 0 0.5em 0; }
+
+.plkTitle3,
+.is-markdown h3 {
+  font-family: 'Raleway';
+  color: #57add9;
+  font-size: 1.2em;
+  margin: 1em 0 0.5em 0; }
+
+.is-markdown a, .plkFooter .plkFooterMenu ul li a,
+.is-markdown a:visited,
+.plkFooter .plkFooterMenu ul li a:visited {
   color: #efefef; }
-  .plkFooter .plkFooterMenu ul li a:hover, .plkMain a:hover, .plkFooter .plkFooterMenu ul li a:visited:hover, .plkMain a:visited:hover {
+  .is-markdown a:hover, .plkFooter .plkFooterMenu ul li a:hover,
+  .is-markdown a:visited:hover,
+  .plkFooter .plkFooterMenu ul li a:visited:hover {
     color: #08708c; }
+
+.is-markdown p {
+  margin: 0 0 1.4em 0;
+  line-height: 1.4em; }
+
+.is-markdown strong {
+  font-family: 'Raleway_bold'; }
+
+.is-markdown ul {
+  margin: 0 0 1.4em 0; }
 
 .plkHeader {
   display: -ms-flexbox;
@@ -135,11 +171,73 @@
           .plkFooter .plkFooterMenu ul li a.is-active {
             color: #efefef; }
 
-.plkTitle1 {
-  font-family: 'Bitter_bold';
-  color: #08708c;
-  font-size: 2.6em;
-  margin: 0 0 1em 0; }
+.plkImgFull {
+  display: block;
+  position: relative;
+  margin: 0 0 1.4em 0; }
+  .plkImgFull img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.plkInpageNav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  background-color: #232323;
+  margin-bottom: 1.4em;
+  z-index: 100; }
+  .plkInpageNav a, .plkInpageNav a:visited {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 0.7em;
+    color: #7a7a7a;
+    text-decoration: none; }
+    .plkInpageNav a:hover, .plkInpageNav a:visited:hover {
+      color: #08708c; }
+    .plkInpageNav a + a, .plkInpageNav a:visited + a {
+      border-left: 1px solid #000000; }
+
+.plkSectionTitle {
+  display: block;
+  position: relative; }
+  .plkSectionTitle a {
+    position: relative;
+    top: -60px;
+    left: 0; }
+
+.plkTextAndImg {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .plkTextAndImg:after {
+    content: "";
+    clear: both; }
+  .plkTextAndImg .plkImg {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 400px;
+    margin-bottom: 1em; }
+    .plkTextAndImg .plkImg.plkSide-left {
+      float: left;
+      margin-right: 1em; }
+    .plkTextAndImg .plkImg.plkSide-right {
+      float: right;
+      margin-left: 1em; }
+    .plkTextAndImg .plkImg img {
+      width: 100%;
+      height: auto; }
+
+.plkVideo {
+  display: block;
+  position: relative;
+  margin: 0 0 1.4em 0; }
 
 body {
   font-family: 'Raleway';
@@ -148,7 +246,7 @@ body {
 .plkWrapper {
   color: #efefef;
   background-image: url("/themes/custom/planck_theme/img/background.png");
-  background-position-y: 200px;
+  background-position-y: 300px;
   background-position-x: 0;
   background-repeat: no-repeat;
   background-size: 325px 765px; }

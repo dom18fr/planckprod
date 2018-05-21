@@ -1,0 +1,15 @@
+uuid: 96023594-4e26-4a16-bd27-952a5eeef63e
+langcode: fr
+status: true
+dependencies: {  }
+name: img_full
+label: img_full
+effects:
+  36a8013f-2a49-4d19-8490-180b0c627021:
+    uuid: 36a8013f-2a49-4d19-8490-180b0c627021
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: true
