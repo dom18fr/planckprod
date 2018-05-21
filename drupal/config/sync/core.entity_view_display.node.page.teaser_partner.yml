@@ -4,20 +4,36 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser_partner
+    - field.field.node.page.field_booker_email
+    - field.field.node.page.field_booker_name
     - field.field.node.page.field_event_date
     - field.field.node.page.field_event_link
     - field.field.node.page.field_page_type
     - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_partner_url
     - field.field.node.page.field_primary_image
     - field.field.node.page.field_related_groups
     - node.type.page
   module:
+    - link
     - user
 id: node.page.teaser_partner
 targetEntityType: node
 bundle: page
 mode: teaser_partner
 content:
+  field_partner_url:
+    type: link_separate
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
   field_primary_image:
     type: entity_reference_entity_view
     weight: 0
@@ -29,6 +45,8 @@ content:
     third_party_settings: {  }
 hidden:
   extra_field_inpage_navigation: true
+  field_booker_email: true
+  field_booker_name: true
   field_event_date: true
   field_event_link: true
   field_page_type: true

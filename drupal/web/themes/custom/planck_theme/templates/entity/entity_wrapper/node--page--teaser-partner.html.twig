@@ -1,6 +1,6 @@
-<a href="{{ url }}" class="plkPartnerTeaser">
+<a href="{{ content.field_partner_url[0]['#url'] }}" class="plkPartnerTeaser" target="_blank">
     <div class="plkPartnerTeaserImg">
         {{ content.field_primary_image }}
     </div>
 </a>
-{{ content|without('field_primary_image') }}
+{{ content|without('field_primary_image','field_partner_url') }}
