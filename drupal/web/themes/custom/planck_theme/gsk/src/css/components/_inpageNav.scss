@@ -20,3 +20,15 @@
         }
     }
 }
+.toolbar-tray-open.toolbar-fixed.toolbar-horizontal {
+    .plkInpageNav.is-sticky {
+        margin-top: 79px;
+    }
+}
+
+.plkInpageNavPlaceholder {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 68px;
+}

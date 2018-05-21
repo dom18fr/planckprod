@@ -1,0 +1,25 @@
+uuid: 85b93f4f-fc2e-443b-a3c0-25225b7b9662
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_partners
+    - paragraphs.paragraphs_type.partner_grid
+id: paragraph.partner_grid.field_partners
+field_name: field_partners
+entity_type: paragraph
+bundle: partner_grid
+label: partners
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: partners
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

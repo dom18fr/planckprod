@@ -1,0 +1,33 @@
+uuid: b66088e5-d15e-4163-a823-0821c84d1949
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.group
+    - field.field.media.image.field_media_image
+    - image.style.group
+    - media.type.image
+  module:
+    - image
+id: media.image.group
+targetEntityType: media
+bundle: image
+mode: group
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: group
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true
+  xfield_label: true
+  xfield_linked_label: true

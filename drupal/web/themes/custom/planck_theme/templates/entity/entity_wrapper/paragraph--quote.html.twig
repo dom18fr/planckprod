@@ -1,0 +1,13 @@
+<div class="plkQuoteWpr">
+    <i class="fas fa-quote-left"></i>
+    <div class="plkQuote">
+        <div class="plkQuoteText">
+            {{ content.field_text }}
+        </div>
+        <div class="plkQuoteAuthor">
+            {{ content.field_author }}
+        </div>
+    </div>
+    <i class="fas fa-quote-right"></i>
+</div>
+{{ content|without('field_text', 'field_author') }}

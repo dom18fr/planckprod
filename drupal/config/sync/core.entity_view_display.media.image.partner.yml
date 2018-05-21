@@ -1,0 +1,33 @@
+uuid: e70f0dac-04b1-4c71-abc2-4f6813df58d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.partner
+    - field.field.media.image.field_media_image
+    - image.style.partner
+    - media.type.image
+  module:
+    - image
+id: media.image.partner
+targetEntityType: media
+bundle: image
+mode: partner
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: partner
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true
+  xfield_label: true
+  xfield_linked_label: true

@@ -1,0 +1,22 @@
+.plkDownload {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-bottom: 1.4em;
+  .plkIco {
+    font-size: 2em;
+    color: $light-alt-color;
+    position: relative;
+    top: -4px;
+  }
+  a {
+    margin-left: 1em;
+    color: $text-color;
+    text-decoration: none;
+    &:hover {
+      color: $alt-color;
+      text-decoration: underline;
+    }
+  }
+}

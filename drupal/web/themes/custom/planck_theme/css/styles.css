@@ -31,7 +31,10 @@
   font-family: 'Bitter_bold';
   color: #08708c;
   font-size: 2.6em;
-  margin: 0 0 0.5em 0; }
+  margin: 0 0 1em 0; }
+
+.is-front h1.plkTitle1 {
+  display: none; }
 
 .plkTitle2,
 .is-markdown h2,
@@ -39,7 +42,7 @@
   font-family: 'Bitter';
   color: #7a7a7a;
   font-size: 1.6em;
-  margin: 1em 0 0.5em 0; }
+  margin: 2em 0 1.5em 0; }
 
 .plkTitle3,
 .is-markdown h3 {
@@ -171,6 +174,95 @@
           .plkFooter .plkFooterMenu ul li a.is-active {
             color: #efefef; }
 
+.plkDiscography {
+  width: 750px;
+  border-left: 1px solid #232323;
+  margin: auto;
+  padding: 0 1.4em;
+  box-sizing: border-box; }
+  .plkDiscography .plkRecord {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin: 0 0 1.4em 0; }
+    .plkDiscography .plkRecord .plkRecordImg {
+      display: block;
+      width: 250px;
+      margin: 0 1em 0 0; }
+      .plkDiscography .plkRecord .plkRecordImg img {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto; }
+    .plkDiscography .plkRecord .plkRecordInfos {
+      width: calc(750px - 250px - 1em - 1.4em - 1.4em); }
+      .plkDiscography .plkRecord .plkRecordInfos .plkRecordTitle {
+        font-family: 'Bitter_bold';
+        font-size: 1.6em;
+        margin: 0 0 0.5em 0;
+        color: #efefef; }
+      .plkDiscography .plkRecord .plkRecordInfos .plkRecordDate {
+        font-size: 1.2em; }
+        .plkDiscography .plkRecord .plkRecordInfos .plkRecordDate i {
+          margin: 0 0.5em 0 0; }
+      .plkDiscography .plkRecord .plkRecordInfos .plkRecordDescription {
+        color: #7a7a7a; }
+
+.plkDownload {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  margin-bottom: 1.4em; }
+  .plkDownload .plkIco {
+    font-size: 2em;
+    color: #57add9;
+    position: relative;
+    top: -4px; }
+  .plkDownload a {
+    margin-left: 1em;
+    color: #efefef;
+    text-decoration: none; }
+    .plkDownload a:hover {
+      color: #08708c;
+      text-decoration: underline; }
+
+.plkFlickr {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.plkGroupsGrid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; }
+  .plkGroupsGrid .plkGroupTeaser {
+    text-decoration: none; }
+    .plkGroupsGrid .plkGroupTeaser .plkGroupTeaserImg {
+      display: block;
+      position: relative; }
+      .plkGroupsGrid .plkGroupTeaser .plkGroupTeaserImg img {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto; }
+    .plkGroupsGrid .plkGroupTeaser .plkGroupTeaserTitle {
+      font-family: 'Bitter';
+      font-size: 1.6em;
+      color: #7a7a7a;
+      text-align: center;
+      margin: 0.5em 0 1.4em 0; }
+
 .plkImgFull {
   display: block;
   position: relative;
@@ -202,6 +294,59 @@
     .plkInpageNav a + a, .plkInpageNav a:visited + a {
       border-left: 1px solid #000000; }
 
+.toolbar-tray-open.toolbar-fixed.toolbar-horizontal .plkInpageNav.is-sticky {
+  margin-top: 79px; }
+
+.plkInpageNavPlaceholder {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 68px; }
+
+.plkPartnerGrid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .plkPartnerGrid .plkPartnerTeaser {
+    text-decoration: none; }
+    .plkPartnerGrid .plkPartnerTeaser .plkPartnerTeaserImg {
+      display: block;
+      position: relative; }
+      .plkPartnerGrid .plkPartnerTeaser .plkPartnerTeaserImg img {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto; }
+
+.plkQuoteWpr {
+  display: block;
+  position: relative;
+  margin: 0 auto 1.4em auto;
+  padding: 1em 0;
+  width: 750px; }
+  .plkQuoteWpr .fas {
+    display: block;
+    position: absolute;
+    font-size: 3em;
+    color: #57add9; }
+    .plkQuoteWpr .fas.fa-quote-left {
+      top: 0em;
+      left: -1.5em; }
+    .plkQuoteWpr .fas.fa-quote-right {
+      bottom: 0em;
+      right: -1.5em; }
+  .plkQuoteWpr .plkQuote {
+    font-family: 'Bitter';
+    font-style: italic; }
+    .plkQuoteWpr .plkQuote .plkQuoteAuthor {
+      display: block;
+      position: absolute;
+      color: #57add9;
+      right: 0;
+      bottom: 0; }
+
 .plkSectionTitle {
   display: block;
   position: relative; }
@@ -209,6 +354,26 @@
     position: relative;
     top: -60px;
     left: 0; }
+
+.toolbar-tray-open.toolbar-fixed.toolbar-horizontal .plkSectionTitle a {
+  top: calc(-60px - 79px); }
+
+.plkSocialLinks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin: 0 0 1.4em 0; }
+  .plkSocialLinks .plkSocialLink {
+    font-size: 2.5em; }
+    .plkSocialLinks .plkSocialLink a, .plkSocialLinks .plkSocialLink a:visited {
+      color: #efefef; }
+      .plkSocialLinks .plkSocialLink a:hover, .plkSocialLinks .plkSocialLink a:visited:hover {
+        color: #08708c; }
+    .plkSocialLinks .plkSocialLink + .plkSocialLink {
+      margin-left: 1em; }
 
 .plkTextAndImg {
   display: block;
@@ -237,7 +402,8 @@
 .plkVideo {
   display: block;
   position: relative;
-  margin: 0 0 1.4em 0; }
+  margin: 0 0 1.4em 0;
+  border: 1px solid #232323; }
 
 body {
   font-family: 'Raleway';
@@ -246,10 +412,11 @@ body {
 .plkWrapper {
   color: #efefef;
   background-image: url("/themes/custom/planck_theme/img/background.png");
-  background-position-y: 300px;
+  background-position-y: 200px;
   background-position-x: 0;
   background-repeat: no-repeat;
-  background-size: 325px 765px; }
+  background-size: 325px 765px;
+  background-attachment: fixed; }
   .plkWrapper .plkContent {
     display: -ms-flexbox;
     display: flex;

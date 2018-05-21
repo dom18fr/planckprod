@@ -1,0 +1,14 @@
+uuid: 6c2734d1-462b-4946-9686-975ba1bc2d52
+langcode: en
+status: true
+dependencies: {  }
+name: group
+label: group
+effects:
+  0fff0ccf-3bc2-4ce4-bbde-ff46dd3be93e:
+    uuid: 0fff0ccf-3bc2-4ce4-bbde-ff46dd3be93e
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 600
+      height: 370

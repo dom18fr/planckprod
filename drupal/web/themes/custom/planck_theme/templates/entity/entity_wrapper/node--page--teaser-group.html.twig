@@ -1,0 +1,9 @@
+<a href="{{ url }}" class="plkGroupTeaser">
+    <div class="plkGroupTeaserImg">
+        {{ content.field_primary_image }}
+    </div>
+    <div class="plkGroupTeaserTitle">
+        {{ content.xfield_label }}
+    </div>
+</a>
+{{ content|without('field_primary_image','xfield_label') }}

@@ -1,11 +1,13 @@
 {% if element.items %}
     {{ attach_library('planck_theme/sticky') }}
     {{ attach_library('planck_theme/smooth-scroll') }}
-    <div class="plkInpageNav" data-sticky>
-        {% for item in element.items %}
-            <a href="#{{ item.anchor }}">
-                <i class="{{ item.icon }}"></i>{{ item.title }}
-            </a>
-        {% endfor %}
+    <div class="plkInpageNavPlaceholder">
+        <div class="plkInpageNav" data-sticky>
+            {% for item in element.items %}
+                <a href="#{{ item.anchor }}">
+                    <i class="{{ item.icon }}"></i>{{ item.title }}
+                </a>
+            {% endfor %}
+        </div>
     </div>
 {% endif %}

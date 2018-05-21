@@ -1,0 +1,10 @@
+uuid: fc419769-6e1d-47ca-a9ca-b9d6d775cd39
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.partner
+label: partner
+targetEntityType: media
+cache: true

@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.paragraph.record.field_date
     - field.field.paragraph.record.field_image
+    - field.field.paragraph.record.field_text
     - field.field.paragraph.record.field_title
     - paragraphs.paragraphs_type.record
   module:
     - entity_browser_entity_form
     - inline_entity_form
+    - text
 id: paragraph.record.default
 targetEntityType: paragraph
 bundle: record
@@ -36,6 +38,14 @@ content:
         entity_browser_id: media_brower
     type: inline_entity_form_complex
     region: content
+  field_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_title:
     weight: 0
     settings:
@@ -47,4 +57,5 @@ content:
 hidden:
   created: true
   status: true
+  translation: true
   uid: true

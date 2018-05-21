@@ -1,0 +1,9 @@
+uuid: fe2381e4-9fa7-48da-85c3-06107173a32e
+langcode: en
+status: true
+dependencies: {  }
+id: partner_grid
+label: partner_grid
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

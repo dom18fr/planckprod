@@ -1,0 +1,19 @@
+uuid: e226c68c-aff2-4c91-8671-dca71a204285
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booker_name
+    - node.type.page
+id: node.page.field_booker_name
+field_name: field_booker_name
+entity_type: node
+bundle: page
+label: booker_name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

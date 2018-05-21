@@ -1,0 +1,19 @@
+.plkPartnerGrid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    .plkPartnerTeaser {
+      text-decoration: none;
+      .plkPartnerTeaserImg {
+        display: block;
+        position: relative;
+        img {
+          display: block;
+          position: relative;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  

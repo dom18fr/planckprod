@@ -5,8 +5,11 @@ dependencies:
   config:
     - field.field.paragraph.record.field_date
     - field.field.paragraph.record.field_image
+    - field.field.paragraph.record.field_text
     - field.field.paragraph.record.field_title
     - paragraphs.paragraphs_type.record
+  module:
+    - text
 id: paragraph.record.default
 targetEntityType: paragraph
 bundle: record
@@ -26,10 +29,17 @@ content:
     weight: 0
     label: hidden
     settings:
-      link: true
-      view_mode: default
+      view_mode: record
+      link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
+    region: content
+  field_text:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_title:
     weight: 1

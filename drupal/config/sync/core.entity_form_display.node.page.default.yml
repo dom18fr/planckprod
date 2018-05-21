@@ -3,10 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_booker_email
+    - field.field.node.page.field_booker_name
     - field.field.node.page.field_event_date
     - field.field.node.page.field_event_link
     - field.field.node.page.field_page_type
     - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_partner_url
     - field.field.node.page.field_primary_image
     - field.field.node.page.field_related_groups
     - node.type.page
@@ -24,8 +27,11 @@ third_party_settings:
       children:
         - field_primary_image
         - field_event_date
-        - field_related_groups
         - field_event_link
+        - field_related_groups
+        - field_booker_email
+        - field_booker_name
+        - field_partner_url
       parent_name: ''
       weight: 3
       format_type: fieldset
@@ -42,10 +48,70 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_booker_email:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        f012b494-e914-4ac6-97d3-dab68253b762:
+          dependee: field_page_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: booker
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: page
+    type: string_textfield
+    region: content
+  field_booker_name:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        13046191-7dc8-4f1b-af18-b177c71dbbb1:
+          dependee: field_page_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: booker
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: page
+    type: string_textfield
+    region: content
   field_event_date:
     weight: 5
     settings: {  }
@@ -75,7 +141,7 @@ content:
     type: datetime_timestamp
     region: content
   field_event_link:
-    weight: 7
+    weight: 6
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -112,7 +178,7 @@ content:
     region: content
   field_paragraphs:
     type: entity_reference_paragraphs
-    weight: 7
+    weight: 4
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -121,6 +187,36 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
+  field_partner_url:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        9aa6a243-6a0b-4db4-a8ba-dfa3db23b064:
+          dependee: field_page_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: partner
+            effect: slide
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: page
+    type: link_default
     region: content
   field_primary_image:
     weight: 4
@@ -158,7 +254,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_related_groups:
-    weight: 6
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
@@ -197,7 +293,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 12
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -205,7 +301,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 9
     region: content
     third_party_settings: {  }
   title:
@@ -217,13 +313,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 8
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60

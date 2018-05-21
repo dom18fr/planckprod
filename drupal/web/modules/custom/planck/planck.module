@@ -1,18 +1,5 @@
 <?php
 
-use Drupal\Core\Entity\EntityInterface;
-
-/**
- * Implements hook_entity_view_mode_alter().
- * @param $view_mode
- * @param \Drupal\Core\Entity\EntityInterface $entity
- * @param $context
- */
-function planck_entity_view_mode_alter(&$view_mode, EntityInterface $entity, $context)
-{
-    Drupal::service('planck.view_mode_handler')->entityViewModeAlter($view_mode, $entity, $context);
-}
-
 /**
  * Implements hook_theme().
  * @param $existing

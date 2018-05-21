@@ -15,10 +15,11 @@ body {
 .plkWrapper {
   color: $text-color;
   background-image: url('/themes/custom/planck_theme/img/background.png');
-  background-position-y: 300px;
+  background-position-y: 200px;
   background-position-x: 0;
   background-repeat: no-repeat;
   background-size: 325px 765px;
+  background-attachment: fixed;
   .plkContent {
     display: flex;
     position: relative;

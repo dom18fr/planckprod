@@ -1,0 +1,25 @@
+uuid: 02ee3fbc-5b60-4afc-b587-7c89768a9930
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partner_grid.field_partners
+    - paragraphs.paragraphs_type.partner_grid
+id: paragraph.partner_grid.default
+targetEntityType: paragraph
+bundle: partner_grid
+mode: default
+content:
+  field_partners:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

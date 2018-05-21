@@ -1,0 +1,25 @@
+uuid: bd4459a6-badb-4551-b665-b622ee98fe50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_groups
+    - paragraphs.paragraphs_type.groups_grid
+id: paragraph.groups_grid.field_groups
+field_name: field_groups
+entity_type: paragraph
+bundle: groups_grid
+label: groups
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: groups
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

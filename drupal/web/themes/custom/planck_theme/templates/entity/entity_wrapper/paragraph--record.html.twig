@@ -1,0 +1,18 @@
+<div class="plkRecord">
+    <div class="plkRecordImg">
+        {{ content.field_image }}
+    </div>
+    <div class="plkRecordInfos">
+        <div class="plkRecordTitle">
+            {{ content.field_title }}
+        </div>
+        <div class="plkRecordDate">
+            <i class="far fa-calendar"></i>
+            {{ content.field_date }}
+        </div>
+        <div class="plkRecordDescription">
+            {{ content.field_text }}
+        </div>
+    </div>
+</div>
+{{ content|without('field_title','field_date','field_image','field_text') }}

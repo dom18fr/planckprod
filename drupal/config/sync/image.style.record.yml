@@ -1,0 +1,15 @@
+uuid: b186d662-1167-4a3b-b3d5-b81d6a5977b5
+langcode: en
+status: true
+dependencies: {  }
+name: record
+label: record
+effects:
+  d5014fb1-c07c-4f16-9f33-497a3bcae5d3:
+    uuid: d5014fb1-c07c-4f16-9f33-497a3bcae5d3
+    id: image_scale
+    weight: 1
+    data:
+      width: 500
+      height: null
+      upscale: true

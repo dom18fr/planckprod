@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.section_title.field_inpage_nav
-    - field.field.paragraph.section_title.field_logo
     - field.field.paragraph.section_title.field_title
     - paragraphs.paragraphs_type.section_title
 id: paragraph.section_title.default
@@ -19,14 +18,6 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-  field_logo:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_title:
     weight: 0
     settings:

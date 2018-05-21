@@ -1,0 +1,42 @@
+.plkDiscography {
+  width: 750px;
+  border-left: 1px solid $dark-grey;
+  margin: auto;
+  padding: 0 1.4em;
+  box-sizing: border-box;
+  .plkRecord {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 1.4em 0;
+    .plkRecordImg {
+      display: block;
+      width: 250px;
+      margin: 0 1em 0 0;
+      img {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .plkRecordInfos {
+      width: calc(750px - 250px - 1em - 1.4em - 1.4em);
+      .plkRecordTitle {
+        font-family: 'Bitter_bold';
+        font-size: 1.6em;
+        margin: 0 0 0.5em 0;
+        color: $text-color;
+      }
+      .plkRecordDate {
+        font-size: 1.2em;
+        i {
+          margin: 0 0.5em 0 0;
+        }
+      }
+      .plkRecordDescription {
+        color: $light-grey;
+      }
+    }
+  }
+}
+

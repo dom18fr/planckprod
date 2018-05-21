@@ -1,0 +1,6 @@
+<a href="{{ url }}" class="plkPartnerTeaser">
+    <div class="plkPartnerTeaserImg">
+        {{ content.field_primary_image }}
+    </div>
+</a>
+{{ content|without('field_primary_image') }}

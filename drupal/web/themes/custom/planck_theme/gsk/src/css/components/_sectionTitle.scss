@@ -8,3 +8,11 @@
     }
     @extend %plkTitle2;
 }
+
+.toolbar-tray-open.toolbar-fixed.toolbar-horizontal {
+    .plkSectionTitle {
+        a {
+            top: calc(-60px - 79px);
+        }
+    }
+}

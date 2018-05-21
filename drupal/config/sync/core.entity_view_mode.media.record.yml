@@ -1,0 +1,10 @@
+uuid: 9b275330-d1fc-4b28-b23c-ade9bbf6504a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.record
+label: record
+targetEntityType: media
+cache: true

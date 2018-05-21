@@ -1,0 +1,19 @@
+uuid: 365dfb63-bcab-4c46-ae16-10f9cab03c8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booker_email
+    - node.type.page
+id: node.page.field_booker_email
+field_name: field_booker_email
+entity_type: node
+bundle: page
+label: booker_email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
