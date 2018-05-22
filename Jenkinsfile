@@ -62,7 +62,12 @@ pipeline {
       echo "Unstable !"
     }
     failure {
-      echo "Failure !"
+      sh 'ssh planck@54.38.243.195 \
+        -p 22099 \
+        -o StrictHostKeyChecking=no \
+        " \
+        rm -rf /home/planck/planckprod.com/deploy \
+        "'
     }
   }
 }
