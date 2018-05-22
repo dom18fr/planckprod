@@ -25,7 +25,7 @@ pipeline {
         -o StrictHostKeyChecking=no \
         " \
         cd /home/planck/planckprod.com/deploy/drupal \
-        && composer install --no-interaction \
+        && /home/planck/bin/composer install --no-interaction \
         "'
       }
     }
@@ -37,10 +37,10 @@ pipeline {
         -o StrictHostKeyChecking=no \
         " \
         cd /home/planck/planckprod.com/deploy/drupal/web \
-        && drush cr \
-        && drush cim -y \
-        && drush updb -y \
-        && drush cr \
+        && /home/planck/bin/drush cr \
+        && /home/planck/bin/drush cim -y \
+        && /home/planck/bin/drush updb -y \
+        && /home/planck/bin/drush cr \
         "'
       }
     }
