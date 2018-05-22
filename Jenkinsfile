@@ -17,6 +17,21 @@ pipeline {
         "'
       }
     }
+
+    stage('Update Drupal') {
+      steps {
+        sh 'ssh planck@54.38.243.195 \
+        -p 22099 \
+        -o StrictHostKeyChecking=no \
+        " \
+        cd /home/planck/planckprod.com/deploy/drupal/web \
+        && drush cr \
+        && drush cim -y \
+        && drush updb -y \
+        && drush cr \
+        "'
+      }
+    }
   }
 
   post {
