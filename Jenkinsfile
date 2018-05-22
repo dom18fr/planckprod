@@ -18,6 +18,18 @@ pipeline {
       }
     }
 
+    stage('Build Drupal sources') {
+      steps {
+        sh 'ssh planck@54.38.243.195 \
+        -p 22099 \
+        -o StrictHostKeyChecking=no \
+        " \
+        cd /home/planck/planckprod.com/deploy/drupal \
+        && composer install --no-interaction \
+        "'
+      }
+    }
+
     stage('Update Drupal') {
       steps {
         sh 'ssh planck@54.38.243.195 \
