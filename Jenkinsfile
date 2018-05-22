@@ -26,8 +26,8 @@ pipeline {
         " \
         cd /home/planck/planckprod.com/deploy/drupal \
         && /home/planck/bin/composer install --no-interaction \
-        && ln -s /home/planck/planckprod.com/shared/settings.local.php /home/planck/planckprod.com/deploy/drupal/web/sites/default/settings.local.php
-        && ln -s /home/planck/planckprod.com/shared/files /home/planck/planckprod.com/deploy/drupal/web/sites/default/files
+        && ln -s /home/planck/planckprod.com/shared/settings.local.php /home/planck/planckprod.com/deploy/drupal/web/sites/default/settings.local.php \
+        && ln -s /home/planck/planckprod.com/shared/files /home/planck/planckprod.com/deploy/drupal/web/sites/default/files \
         "'
       }
     }
