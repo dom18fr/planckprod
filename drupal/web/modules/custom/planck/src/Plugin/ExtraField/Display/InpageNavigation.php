@@ -68,8 +68,10 @@ class InpageNavigation extends ExtraFieldDisplayBase
         $title = null;
         $icon = null;
         $anchor = null;
+        $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
         try {
-            $titleItem = $paragraph->get('field_title')->first();
+            $translated = $paragraph->getTranslation($language);
+            $titleItem = $translated->get('field_title')->first();
             $title = null !== $titleItem ? $titleItem->getValue()['value'] : null;
             $anchor = Html::getClass($title);
         } catch (\Exception $e) {}

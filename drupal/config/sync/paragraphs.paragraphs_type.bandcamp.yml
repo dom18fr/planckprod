@@ -1,0 +1,9 @@
+uuid: 4f72cdb4-2f3c-477c-a25e-cbc367460222
+langcode: en
+status: true
+dependencies: {  }
+id: bandcamp
+label: bandcamp
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

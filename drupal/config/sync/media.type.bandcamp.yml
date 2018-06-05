@@ -1,0 +1,15 @@
+uuid: cfc5eb16-c729-4eab-8a16-6a381704f4ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - planck
+id: bandcamp
+label: bandcamp
+description: ''
+source: flickr
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: ''
+field_map: {  }

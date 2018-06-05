@@ -1,0 +1,22 @@
+uuid: a252f4bf-39ef-4641-94c4-1e6b84116b57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bandcamp.field_embed
+    - paragraphs.paragraphs_type.bandcamp
+  module:
+    - text
+id: paragraph.bandcamp.default
+targetEntityType: paragraph
+bundle: bandcamp
+mode: default
+content:
+  field_embed:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

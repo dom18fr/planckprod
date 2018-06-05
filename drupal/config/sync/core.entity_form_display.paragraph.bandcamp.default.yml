@@ -1,0 +1,26 @@
+uuid: 88118e74-686d-4e6f-9055-5f5609e77687
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bandcamp.field_embed
+    - paragraphs.paragraphs_type.bandcamp
+  module:
+    - text
+id: paragraph.bandcamp.default
+targetEntityType: paragraph
+bundle: bandcamp
+mode: default
+content:
+  field_embed:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
