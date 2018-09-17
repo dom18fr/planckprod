@@ -4,24 +4,34 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser_event
+    - field.field.node.page.field_booker_email
+    - field.field.node.page.field_booker_name
     - field.field.node.page.field_event_date
     - field.field.node.page.field_event_link
+    - field.field.node.page.field_event_location
     - field.field.node.page.field_page_type
     - field.field.node.page.field_paragraphs
+    - field.field.node.page.field_partner_url
     - field.field.node.page.field_primary_image
     - field.field.node.page.field_related_groups
     - node.type.page
   module:
     - link
+    - text
     - user
 id: node.page.teaser_event
 targetEntityType: node
 bundle: page
 mode: teaser_event
 content:
+  extra_field_event_timestamp:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_event_date:
     type: timestamp
-    weight: 3
+    weight: 2
     region: content
     label: hidden
     settings:
@@ -30,7 +40,7 @@ content:
       timezone: ''
     third_party_settings: {  }
   field_event_link:
-    weight: 2
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -41,14 +51,28 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  field_event_location:
+    type: text_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_primary_image:
     type: entity_reference_entity_view
     weight: 0
     region: content
     label: hidden
     settings:
-      link: true
-      view_mode: default
+      view_mode: agenda
+      link: false
+    third_party_settings: {  }
+  field_related_groups:
+    type: entity_reference_entity_id
+    weight: 5
+    region: content
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
   xfield_label:
     weight: 1
@@ -57,9 +81,11 @@ content:
     third_party_settings: {  }
 hidden:
   extra_field_inpage_navigation: true
+  field_booker_email: true
+  field_booker_name: true
   field_page_type: true
   field_paragraphs: true
-  field_related_groups: true
+  field_partner_url: true
   langcode: true
   links: true
   xfield_linked_label: true

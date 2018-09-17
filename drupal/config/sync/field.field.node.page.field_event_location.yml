@@ -1,0 +1,21 @@
+uuid: c92fd983-8e7e-4480-a336-ab490343d7e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_location
+    - node.type.page
+  module:
+    - text
+id: node.page.field_event_location
+field_name: field_event_location
+entity_type: node
+bundle: page
+label: event_location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

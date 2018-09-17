@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - node
+    - options
     - user
 _core:
   default_config_hash: tS8PbpJX90aRFC3-UTgXzdqkq7_2frk2pz4TMijEebM
@@ -396,31 +397,30 @@ display:
           plugin_id: string
           entity_type: node
           entity_field: title
-        type:
-          id: type
-          table: node_field_data
-          field: type
+        field_page_type_value:
+          id: field_page_type_value
+          table: node__field_page_type
+          field: field_page_type_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
+          operator: or
           value: {  }
           group: 1
           exposed: true
           expose:
-            operator_id: type_op
-            label: 'Content type'
+            operator_id: field_page_type_value_op
+            label: Type
             description: ''
             use_operator: false
-            operator: type_op
-            identifier: type
+            operator: field_page_type_value_op
+            identifier: field_page_type_value
             required: false
-            remember: false
+            remember: true
             multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -434,9 +434,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: bundle
-          entity_type: node
-          entity_field: type
+          reduce_duplicates: false
+          plugin_id: list_field
         status:
           id: status
           table: node_field_data

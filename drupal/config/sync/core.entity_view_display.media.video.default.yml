@@ -29,3 +29,5 @@ hidden:
   name: true
   thumbnail: true
   uid: true
+  xfield_label: true
+  xfield_linked_label: true

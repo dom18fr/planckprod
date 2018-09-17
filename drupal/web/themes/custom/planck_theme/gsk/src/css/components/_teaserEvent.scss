@@ -1,0 +1,33 @@
+.plkTeaserEvent {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 100px;
+    & +.plkTeaserEvent {
+        padding-top: 2em;
+        border-top: 1px solid $light-grey;
+    }
+    .plkTeaserEvent-image {
+        img {
+            width: 175px;
+            height: auto;
+        }
+        margin-right: 30px;
+    }
+    .plkTitle2 {
+        color: #000000;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    .plkTeaserEventDate {
+        margin-bottom: 1em;
+    }
+    .plkTeaserEventLink {
+        a {
+            color: $light-alt-color;
+        }
+        margin-bottom: 1em;
+    }
+    .plkTeaserEventLocation {
+        margin-bottom: 1em;
+    }
+}

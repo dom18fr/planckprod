@@ -35,6 +35,7 @@ module:
   path: 0
   planck: 0
   simplemde: 0
+  stage_file_proxy: 0
   system: 0
   text: 0
   token: 0

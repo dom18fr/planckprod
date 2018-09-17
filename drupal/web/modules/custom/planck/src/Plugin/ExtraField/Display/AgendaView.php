@@ -43,9 +43,11 @@ class AgendaView extends ExtraFieldDisplayFormattedBase
             } else {
                 $selector = [
                     '#type' => 'select',
-                    '#title' => 'select group',
                     '#options' => $this->getGroupOptions(),
                     '#weight' => 0,
+                    '#attributes' => [
+                        'data-agenda' => 'band-selector',
+                    ],
                 ];
             }
         } catch (MissingDataException $e) {
@@ -58,6 +60,9 @@ class AgendaView extends ExtraFieldDisplayFormattedBase
                 'view' => [
                     $view,
                     '#weight' => 1,
+                ],
+                '#attached' => [
+                    'library' => 'planck/agenda'
                 ],
             ]
         ];
@@ -73,7 +78,7 @@ class AgendaView extends ExtraFieldDisplayFormattedBase
         $result = $entityQuery->execute();
         $groups = Node::loadMultiple(array_values($result));
         $options = [
-            'all' => t('All bands'),
+            'all' => t('-- Choose a band --'),
         ];
         foreach ($groups as $group) {
             /** @var NodeInterface $group */

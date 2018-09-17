@@ -1,0 +1,32 @@
+.plkAgenda {
+    display: flex;
+    flex-direction: column;
+    select {
+        font-size: 1em;
+        width: 20em;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .microlib_tabs_nav {
+        display: flex;
+        flex-direction: row;
+        .microlib_tabs_nav_item {
+            padding: 0.5em;
+            min-width: 7em;
+            border-radius: 0.3em 0.3em 0 0;
+            background-color: $dark-grey;
+            text-align: center;
+            &.microlib_active {
+                background-color: $grey;
+            }
+        }
+    }
+    .plkAgendaYear {
+        padding: 1em 0;
+        background-color: $grey;
+        display: none;
+        &.microlib_active {
+            display: block;
+        }
+    }
+}

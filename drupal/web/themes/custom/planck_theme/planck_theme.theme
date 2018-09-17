@@ -1,0 +1,5 @@
+<?php
+
+function planck_theme_preprocess_node(&$variables) {
+//    ksm($variables['content']);
+}

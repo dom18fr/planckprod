@@ -5,10 +5,9 @@ url:
   prefixes:
     en: en
     fr: fr
-    '': null
   domains:
     en: ''
     fr: ''
-selected_langcode: site_default
+selected_langcode: en
 _core:
   default_config_hash: uEePITI9tV6WqzmsTb7MfPCi5yPWXSxAN1xeLcYFQbM

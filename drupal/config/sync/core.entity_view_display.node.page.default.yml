@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.page.field_booker_name
     - field.field.node.page.field_event_date
     - field.field.node.page.field_event_link
+    - field.field.node.page.field_event_location
     - field.field.node.page.field_page_type
     - field.field.node.page.field_paragraphs
     - field.field.node.page.field_partner_url
@@ -15,6 +16,7 @@ dependencies:
     - node.type.page
   module:
     - entity_reference_revisions
+    - text
     - user
 id: node.page.default
 targetEntityType: node
@@ -26,6 +28,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_event_location:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_paragraphs:
     type: entity_reference_revisions_entity_view
     weight: 2

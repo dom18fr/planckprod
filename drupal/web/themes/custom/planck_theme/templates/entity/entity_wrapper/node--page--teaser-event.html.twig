@@ -1,0 +1,12 @@
+<div 
+    class="plkTeaserEvent"
+    data-group="{{ content.field_related_groups|render|striptags|trim }}" 
+    data-date="{{ content.extra_field_event_timestamp|render|striptags|trim }}"
+>
+    <div class="plkTeaserEvent-image">
+        {{ content.field_primary_image }}
+    </div>
+    <div class="plkTeaserEvent-content">
+        {{ content|without('field_related_groups', 'extra_field_event_timestamp', 'field_primary_image') }}
+    </div>
+</div>

@@ -1,0 +1,6 @@
+agenda:
+  js:
+    /libraries/microlib-tabs/dist/tabs-standalone.microlib-2.1.0.min.js: { minified: true }
+    js/agenda.js: {}
+  dependencies:
+    - core/drupal

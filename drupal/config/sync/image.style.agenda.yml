@@ -1,0 +1,15 @@
+uuid: f5f531f0-2d02-4111-88fb-6047969d84fb
+langcode: fr
+status: true
+dependencies: {  }
+name: agenda
+label: agenda
+effects:
+  eba04f84-c24a-427f-83a2-ca5ad8a7f90e:
+    uuid: eba04f84-c24a-427f-83a2-ca5ad8a7f90e
+    id: image_scale
+    weight: 2
+    data:
+      width: 350
+      height: null
+      upscale: false

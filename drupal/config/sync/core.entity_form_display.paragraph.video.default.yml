@@ -28,6 +28,9 @@ content:
         entity_browser_id: media_brower
     type: inline_entity_form_complex
     region: content
+  translation:
+    weight: 10
+    region: content
 hidden:
   created: true
   status: true
